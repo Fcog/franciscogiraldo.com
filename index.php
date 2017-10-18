@@ -1,4 +1,3 @@
-<?php header('X-Frame-Options: GOFORIT'); ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,7 +8,7 @@
 <section class="main">
 	<h1>Francisco Giraldo</h1>
 	<h2>Web Developer</h2>
-	<a href="https://www.linkedin.com/in/franciscogiraldo/">Linked In Profile</a>
+	<a target='_top' href="https://www.linkedin.com/in/franciscogiraldo/">Linked In Profile</a>
 </section>
 </body>
 </html>
