@@ -1,5 +1,8 @@
 # franciscogiraldo.com
 Personal Website
 
+## dev
+yarn start
+
 ## build
-npx tailwindcss build styles.css -o build.css
+yarn build
