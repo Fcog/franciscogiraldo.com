@@ -3,3 +3,16 @@
 @tailwind components;
 
 @tailwind utilities;
+
+.external-icon {
+  padding-right: 1.3rem;
+  background-image: url('/images/external-link.svg');
+  background-repeat: no-repeat;
+  background-position: center right;
+  background-size: 1rem;
+}
+
+.bg-gradient-blue {
+  background: rgb(2,79,169);
+  background: linear-gradient(90deg, rgba(2,79,169,1) 0%, rgba(9,9,121,1) 39%, rgba(89,164,255,1) 100%);
+}
