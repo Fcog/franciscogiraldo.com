@@ -8,6 +8,7 @@ body {
   display: flex;
   background: #000;
   font-size: 16px;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
 }
 main {
   position: absolute;
@@ -29,7 +30,6 @@ span {
   font-size: 2vmax;
   color: #9bff9b11;
   text-align: center;
-  font-family: "Helvetica Neue", Helvetica, sans-serif;
 }
 .container {
   display: flex;
@@ -42,7 +42,6 @@ span {
   background-color: rgba(255,255,255,0.6);
   border-radius: 15px;
 }
-
 h1,
 h2,
 a {
@@ -51,7 +50,24 @@ a {
 	font-family: Helvetica;
 	text-align: center;
 }
-
 a {
   display: inline;
+}
+.block {
+  display: block;
+}
+.flex {
+  display: flex;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.w-80 {
+  width: 80%;
+}
+.w-1\/2 {
+  width: 50%;
+}
+.mt-2 {
+  margin-top: 2rem;
 }
