@@ -1,5 +1,5 @@
 # franciscogiraldo.com
 Personal Website
 
-##build
+## build
 npx tailwindcss build styles.css -o build.css
