@@ -1138,7 +1138,7 @@ babel-plugin-dynamic-import-node@^2.3.3:
   dependencies:
     object.assign "^4.1.0"
 
-babel-runtime@^6.11.6, babel-runtime@^6.26.0:
+babel-runtime@6.x.x, babel-runtime@^6.11.6, babel-runtime@^6.26.0:
   version "6.26.0"
   resolved "https://registry.yarnpkg.com/babel-runtime/-/babel-runtime-6.26.0.tgz#965c7058668e82b55d7bfe04ff2337bc8b5647fe"
   integrity sha1-llxwWGaOgrVde/4E/yM3vItWR/4=
@@ -5497,6 +5497,40 @@ word-wrap@~1.2.3:
   version "1.2.3"
   resolved "https://registry.yarnpkg.com/word-wrap/-/word-wrap-1.2.3.tgz#610636f6b1f703891bd34771ccb17fb93b47079c"
   integrity sha512-Hz/mrNwitNRh/HUAtM/VT/5VH+ygD6DV7mYKZAtHOrbs8U7lvPS6xf7EJKMF0uW1KJCl0H701g3ZGus+muE5vQ==
+
+workbox-core@^5.1.3:
+  version "5.1.3"
+  resolved "https://registry.yarnpkg.com/workbox-core/-/workbox-core-5.1.3.tgz#0607acd0018c149162777fe4aae08553bd1559f5"
+  integrity sha512-TFSIPxxciX9sFaj0FDiohBeIKpwMcCyNduydi9i3LChItcndDS6TJpErxybv8aBWeCMraXt33TWtF6kKuIObNw==
+
+workbox-precaching@^5.1.3:
+  version "5.1.3"
+  resolved "https://registry.yarnpkg.com/workbox-precaching/-/workbox-precaching-5.1.3.tgz#08f0b48f4a390872a994c4a6ce8e43d08c6cba57"
+  integrity sha512-9jjBiB00AOI0NnI320ddnhvlL3bjMrDoI3211kEaxcRWh0N2fX25uVn0O8N8u1gWY4tIfwZAn/DgtAU13cFhYA==
+  dependencies:
+    workbox-core "^5.1.3"
+
+workbox-routing@^5.1.3:
+  version "5.1.3"
+  resolved "https://registry.yarnpkg.com/workbox-routing/-/workbox-routing-5.1.3.tgz#9946da0e9ace45af3db09cc0b4bdc4696723e1f7"
+  integrity sha512-F+sAp9Iy3lVl3BEG+pzXWVq4AftzjiFpHDaZ4Kf4vLoBoKQE0hIHet4zE5DpHqYdyw+Udhp4wrfHamX6PN6z1Q==
+  dependencies:
+    workbox-core "^5.1.3"
+
+workbox-strategies@^5.1.3:
+  version "5.1.3"
+  resolved "https://registry.yarnpkg.com/workbox-strategies/-/workbox-strategies-5.1.3.tgz#220cc9f5519ed76f2452ccb9407a5fd967c37110"
+  integrity sha512-wiXHfmOKnWABeIVW+/ye0e00+2CcS5y7SIj2f9zcdy2ZLEbcOf7B+yOl5OrWpBGlTUwRjIYhV++ZqiKm3Dc+8w==
+  dependencies:
+    workbox-core "^5.1.3"
+    workbox-routing "^5.1.3"
+
+workbox@^0.0.0:
+  version "0.0.0"
+  resolved "https://registry.yarnpkg.com/workbox/-/workbox-0.0.0.tgz#26f5e7834abf83178c7c454edc91bc61fef8d6c3"
+  integrity sha1-JvXng0q/gxeMfEVO3JG8Yf741sM=
+  dependencies:
+    babel-runtime "6.x.x"
 
 wrap-ansi@^5.1.0:
   version "5.1.0"

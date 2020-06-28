@@ -18,7 +18,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="/favicons/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
-    <link rel="manifest" href="/favicons/manifest.webmanifest">
+    <link rel="manifest" href="/manifest.webmanifest">
     <meta name="msapplication-TileColor" content="#024fa9">
     <meta name="msapplication-TileImage" content="/favicons/ms-icon-144x144.png">
     <meta name="theme-color" content="#024fa9">
@@ -47,7 +47,7 @@
 
         <div class="mr-48 md:mr-0 md:w-2/12">
           <video autoplay loop width="250" class="rounded-full">
-            <source src="images/francisco-giraldo.webm"
+            <source src="videos/francisco-giraldo.webm"
             type="video/webm">
           </video>
         </div>
@@ -112,6 +112,14 @@
     </div>
 
   </main>
+
+<script>
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('/service-worker.js');
+  });
+}
+</script>
 
 </body>
 
