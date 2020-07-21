@@ -42,9 +42,13 @@ module.exports = {
       }
     }
   },
-  variants: {},
+  variants: {
+    typography: [],
+  },
   plugins: [
     require('@tailwindcss/ui'),
-    require('@tailwindcss/typography'),
+    require('@tailwindcss/typography')({
+      modifiers: ['sm', 'lg', 'xl'],
+    }),
   ]
 };

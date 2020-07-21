@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Static website with the Eleventy static site generator, for deployment to Netlify.",
   "scripts": {
-    "build": "eleventy && postcss styles/tailwind.css --o _site/css/style.css",
+    "build": "ELEVENTY_PRODUCTION=true eleventy && NODE_ENV=production postcss styles/tailwind.css --o _site/css/style.css",
     "start": "eleventy --serve && postcss styles/tailwind.css --o _tmp/style.css --watch",
     "debug": "DEBUG=* npx eleventy"
   },
