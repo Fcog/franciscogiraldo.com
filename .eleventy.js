@@ -73,7 +73,7 @@ module.exports = function(eleventyConfig) {
   });
 
   // Don't process folders with static assets e.g. images
-  eleventyConfig.addPassthroughCopy({ "./_tmp/style.css": "./style.css" });
+  eleventyConfig.addPassthroughCopy({ "./_tmp/style.css": "./css/style.css" });
   eleventyConfig.addPassthroughCopy({
     "./node_modules/particlesjs/dist/particles.min.js": "./js/particle.js",
   });
