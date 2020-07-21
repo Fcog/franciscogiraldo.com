@@ -1,0 +1,43 @@
+{% from "components/avatar.njk" import avatar %}
+
+<nav id="header" class="fixed w-full top-0 text-gray-900 bg-white z-20">
+
+    <div class="container mt-0 py-3 flex items-center justify-between">
+
+        <div class="flex items-center mr-2 md:mr-0">
+
+            <a href="/" class="md:mr-4">
+                {{ avatar( '1', 'h-10 md:h-12' ) }}
+            </a>
+
+            <div class="pl-2 md:pl-4">
+
+                {% set headerClass = 'text-base md:text-xl no-underline hover:no-underline font-extrabold leading-tight' %}
+
+                {% if section == 'post' %}
+
+                <p class="{{ headerClass }}">
+                    {{ main_title }}
+                </p>
+
+                {% else %}
+
+                <h1 class="{{ headerClass }}">
+                    {{ title }}
+                </h1>
+
+                {% endif %}
+            </div>
+
+        </div>
+
+        <div>
+
+            {% include 'sections/menu.njk' %}
+
+        </div>
+
+    </div>
+</nav>
+
+<div class="mb-32"></div>

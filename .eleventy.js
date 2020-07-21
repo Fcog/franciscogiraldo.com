@@ -4,6 +4,7 @@ const UglifyJS = require("uglify-es");
 const htmlmin = require("html-minifier");
 const slugify = require("slugify");
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
+const fs = require("fs");
 
 module.exports = function(eleventyConfig) {
 
@@ -30,6 +31,11 @@ module.exports = function(eleventyConfig) {
     return DateTime.fromJSDate(dateObj).toFormat("yyyy-MM-dd");
   });
 
+  // CSS version
+  eleventyConfig.addShortcode("version", function () {
+    return String(Date.now());
+  });
+
   // Minify CSS
   eleventyConfig.addFilter("cssmin", function(code) {
     return new CleanCSS({}).minify(code).styles;
@@ -48,12 +54,11 @@ module.exports = function(eleventyConfig) {
   // Minify HTML output
   eleventyConfig.addTransform("htmlmin", function(content, outputPath) {
     if (outputPath.indexOf(".html") > -1) {
-      let minified = htmlmin.minify(content, {
+      return htmlmin.minify(content, {
         useShortDoctype: true,
         removeComments: true,
         collapseWhitespace: true
       });
-      return minified;
     }
     return content;
   });
@@ -68,14 +73,17 @@ module.exports = function(eleventyConfig) {
   });
 
   // Don't process folders with static assets e.g. images
-  eleventyConfig.addPassthroughCopy("favicon.ico");
-  eleventyConfig.addPassthroughCopy("static/img");
+  eleventyConfig.addPassthroughCopy({ "./_tmp/style.css": "./style.css" });
+  eleventyConfig.addPassthroughCopy({
+    "./node_modules/particlesjs/dist/particles.min.js": "./js/particle.js",
+  });
   eleventyConfig.addPassthroughCopy("admin");
-  eleventyConfig.addPassthroughCopy("_includes/assets/");
+  eleventyConfig.addPassthroughCopy("assets/");
 
   /* Markdown Plugins */
   let markdownIt = require("markdown-it");
   let markdownItAnchor = require("markdown-it-anchor");
+  let markdownItLink = require("markdown-it-link-attributes");
   let options = {
     html: true,
     breaks: true,
@@ -84,10 +92,35 @@ module.exports = function(eleventyConfig) {
   let opts = {
     permalink: false
   };
+  let optsLink = {
+    attrs: {
+      target: '_blank',
+      rel: 'noopener'
+    }
+  };
 
   eleventyConfig.setLibrary("md", markdownIt(options)
     .use(markdownItAnchor, opts)
+    .use(markdownItLink, optsLink)
   );
+
+  // Set 404 routing in dev server.
+  eleventyConfig.setBrowserSyncConfig({
+    callbacks: {
+      ready: function(err, bs) {
+
+        bs.addMiddleware("*", (req, res) => {
+          const content_404 = fs.readFileSync('_site/404.html');
+          // Provides the 404 content without redirect.
+          res.write(content_404);
+          // Add 404 http status code in request header.
+          // res.writeHead(404, { "Content-Type": "text/html" });
+          res.writeHead(404);
+          res.end();
+        });
+      }
+    }
+  });
 
   return {
     templateFormats: ["md", "njk", "html", "liquid"],

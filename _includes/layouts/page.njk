@@ -2,6 +2,12 @@
 layout: layouts/base.njk
 section: page
 ---
-<h1>{{ title }}</h1>
+{% include "sections/nav.njk" %}
+
+<section class="container w-full md:max-w-4xl mx-auto py-6 mt-40 mb-32 bg-white prose">
 
 {{ layoutContent | safe }}
+
+</section>
+
+{% include "sections/footer.njk" %}

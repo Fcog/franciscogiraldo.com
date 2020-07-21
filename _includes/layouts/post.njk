@@ -3,29 +3,93 @@ layout: layouts/base.njk
 section: post
 ---
 
-<article>
-  <h1>{{ title }}</h1>
-  <p>
-    <small>
-      <time datetime="{{ date | machineDate }}">{{ date | readableDate }}</time> by <a href="/authors/{{ author | slug }}/">{{ author }}</a>
-    </small>
-  </p>
+<div id="progress" class="fixed h-2 z-20 top-0"
+     style="background:linear-gradient(to right, #0001fe var(--scroll), transparent 0);"></div>
 
-  {{ layoutContent | safe }}
+{% include "sections/nav.njk" %}
 
-  {% if tags %}
-    <p>
-    {% for tag in tags %}
-      {%- if tag != "post" -%}
-        {% set tagUrl %}/tags/{{ tag }}/{% endset %}
-        <a href="{{ tagUrl | url }}" rel="tag">{{ tag }}</a>
-      {%- endif -%}
-    {% endfor %}
-    </p>
-  {% endif %}
+<div class="container w-full px-0 md:max-w-3xl mt-40 mb-8">
+{% include "components/back-button.njk" %}
+</div>
+
+<article class="container w-full md:max-w-3xl bg-white">
+
+    <div class="w-full px-4 md:px-6 text-xl text-gray-800 leading-normal" style="font-family:Georgia,serif;">
+
+        <!--Title-->
+        <div class="font-sans">
+
+            <h1 class="font-bold font-sans break-normal text-gray-900 pt-6 pb-2 text-3xl md:text-4xl">{{ title }}</h1>
+
+            <p class="text-sm md:text-base font-normal text-gray-600">
+                Published
+                <time
+                    class="text-sm md:text-base font-normal text-gray-600"
+                    datetime="{{ date | machineDate }}">
+                    {{ date | readableDate }}
+                </time>
+            </p>
+
+        </div>
+
+        <div class="py-6 prose">
+
+            <!--Post Content-->
+
+            {{ layoutContent | safe }}
+
+        </div>
+
+    </div>
+
+    <!--Divider-->
+    <hr class="border-b-2 border-gray-400 my-4 mx-4">
+
+    <!--Tags -->
+    {% if tags %}
+
+        <div class="text-base md:text-sm text-gray-500 px-4 py-6">
+
+            <span class="mr-2">Tags:</span>
+
+            {% include 'components/tags.njk' %}
+
+        </div>
+
+    {% endif %}
+
+    <!--Next & Prev Links-->
+
+    {% if prev %}
+        <!--Divider-->
+        <hr class="border-b-2 border-gray-400 mb-8 mx-4">
+
+        <div class="font-sans flex justify-between content-center px-4 pb-12">
+            <div class="text-left">
+                <span class="text-xs md:text-sm font-normal text-gray-600">&lt; Previous Post</span><br>
+                <p><a href="#"
+                      class="break-normal text-base md:text-sm text-teal-500 font-bold no-underline hover:underline">
+                        Blog title
+                    </a>
+                </p>
+            </div>
+            <div class="text-right">
+                <span class="text-xs md:text-sm font-normal text-gray-600">Next Post &gt;</span><br>
+                <p><a href="#"
+                      class="break-normal text-base md:text-sm text-teal-500 font-bold no-underline hover:underline">
+                        Blog title
+                    </a>
+                </p>
+            </div>
+        </div>
+    {% endif %}
+
+    <!--/Next & Prev Links-->
 
 </article>
 
-<nav>
-  <a href="{{ '/blog/' | url }}">← Blog index</a>
-</nav>
+<div class="container w-full px-0 md:max-w-3xl mt-8 mb-32">
+    {% include "components/back-button.njk" %}
+</div>
+
+{% include "sections/footer.njk" %}

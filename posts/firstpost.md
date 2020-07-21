@@ -1,27 +1,31 @@
 ---
-title: This is my first post
-date: 2015-01-01T00:00:00.000Z
-author: John Appleseed
-summary: Why contemplating our mortality can be a powerful catalyst for change
+title: My first post using Eleventy
+date: 2020-07-20
+image: eleventy-post.jpg
+summary: Hello eleventy world!
+reading_minutes: 1
 tags:
-  - tech
-  - environment
-  - politics
-  - sport
+  - webdevelopment
 ---
-Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.
 
-Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.
+This website was created using the following tools:
+- [Eleventy](https://www.11ty.dev/)
+- [TailwindCSS](https://tailwindcss.com/)
+- [PostCSS](https://postcss.org/)
+- [Tailwind Toolbox](https://www.tailwindtoolbox.com/)
+- [particle.js](https://marcbruederlin.github.io/particles.js/)
 
-## Section Header
+# Eleventy
+Eleventy is a tool for generating HTML from certain configuration files and templates. The HTML generated will be optimized and ready to be uploaded in a server.
 
-Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.
+# TailwindCSS
+Tailwind is a CSS framework that contains hundreds of useful CSS classes for creating any design. This classes are called functional classes because each one of them does just one single thing.
 
-``` text/2-3
-// this is a command
-function myCommand() {
-	let counter = 0;
-	counter++;
-}
-```
-Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.
+# PostCSS
+PostCSS is a javascript tool that compiles Tailwind and optimizes the CSS.
+
+# Tailwind Toolbox
+This is a handy library of UI components created with TailwindCSS.
+
+# Particle JS
+This creates the cool effect of the constellation in the background of this website.

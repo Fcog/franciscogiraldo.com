@@ -1,0 +1,9 @@
+{% macro avatar(border_size='3', size='') %}
+
+<video autoplay loop class="rounded-full border-{{ border_size }} border-gray-900 {{ size }}">
+    <source
+        src="/assets/videos/francisco-giraldo.webm"
+        type="video/webm">
+</video>
+
+{% endmacro %}

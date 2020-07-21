@@ -1,0 +1,55 @@
+{% from "components/social-media-icon.njk" import socialMediaIcon %}
+{% from "components/avatar.njk" import avatar %}
+
+<section class="flex flex-col align-center justify-center px-4 sm:px-6 lg:px-8 h-screen">
+
+    <div class="md:flex max-w-7xl md:w-11/12 min-h-90vh md:min-h-60vh mx-auto rounded-2 shadow-lg bg-white z-10 opacity-90">
+
+        <div class="flex items-center md:w-3/12 h-full">
+
+            <div class="flex flex-col justify-center items-center text-center px-4">
+
+                <div class="mx-12 mb-4">
+
+                    {{ avatar( 3 ) }}
+
+                </div>
+
+                <h1 class="mb-4 text-4xl text-gray-900 font-bold leading-tight">Francisco Giraldo</h1>
+
+                <h2 class="mb-8 text-gray-500">Senior Web Developer</h2>
+
+                <div class="flex">
+
+                    {% for socialMediaitem in socialMedia %}
+
+                        {{ socialMediaIcon( socialMediaitem.title, socialMediaitem.url, socialMediaitem.icon ) }}
+
+                    {% endfor %}
+
+                </div>
+
+                <div class="mt-12 md:hidden text-gray-900">
+
+                    {% include "sections/menu.njk" %}
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="hidden md:flex flex-col justify-center items-center md:w-9/12 px-8 text-center bg-custom-black rounded-2">
+
+            <p class="mb-6 text-6xl font-bold">Hi!</p>
+            <h2 class="mb-12 text-3xl">Welcome to my virtual corner of the WWW!</h2>
+
+            <p class="mb-12">You will find here posts and videos of things I love, like web development, and electric guitar playing!</p>
+
+            {% include "sections/menu.njk" %}
+
+        </div>
+
+    </div>
+
+</section>

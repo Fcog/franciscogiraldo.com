@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.prose a[target="_blank"] {
+    padding-right: .9rem;
+    background-image: url('assets/icons/external-link.svg');
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-size: .7rem;
+}

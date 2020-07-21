@@ -3,20 +3,25 @@
 
 	{% include "components/head.njk" %}
 
-	<body>
+	<body class="bg-custom-blue text-gray-100 font-poppins">
 
-		<header>
-			<em>
-				<a href="{{ '/' | url }}">{{ metadata.title }}</a>
-			</em>
-			{% include "components/nav.njk" %}
-		</header>
+		<div class="fixed top-0 bottom-0 left-0 right-0 -z-10">
+
+			<canvas class="background absolute top-0 bottom-0 left-0 right-0"></canvas>
+
+		</div>
 
 		<main>
 			{{ layoutContent | safe }}
 		</main>
 
-		{% include "components/footer.njk" %}
+		<script src="/js/particle.js"></script>
+
+		{% set js %}
+			{% include "assets/js/inline.js" %}
+		{% endset %}
+
+		<script>{{ js | jsmin | safe }}</script>
 
 	</body>
 

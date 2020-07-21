@@ -1,32 +1,81 @@
 ---
-title: About us
+title: About Francisco
 date: 2017-01-01T00:00:00.000Z
 permalink: /about/index.html
 eleventyNavigation:
   key: About
   order: 1
 ---
-Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.
 
-Add a few line breaks in here to test:-
-Capitalize  
-on  
-low  
-hanging  
-fruit  
+<div class="md:flex">
 
-## Our services
+<div class="w-full md:w-1/3 md:mr-8">
 
-Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.
+![Francisco Giraldo](/assets/images/francisco_giraldo.jpg)
 
-### Blue-sky thinking
+</div>
 
-Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.
+<div class="w-full md:w-2/3">
 
-#### Management frameworks
+Hi! my name is Francisco Giraldo. I'm a **Web Developer** from Cali, Colombia.
 
-Podcasting operational change management inside of workflows to establish a framework. Taking seamless key performance indicators offline to maximise the long tail. Keeping your eye on the ball while performing a deep dive on the start-up mentality to derive convergence on cross-platform integration. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.
+![Colombia in a world map](/assets/images/colombia_map.jpg)
 
-##### Regulatory convergence
+</div>
 
-Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.
+</div>
+
+I have **8 years of experience** working for companies doing Web Development and more than 20 years experimenting with websites since I had my first computer when I was 14 years old. The good old days of Frontpage and fancy color websites and animated gifs!
+
+Nowdays, my main working experience resides in [WordPress](https://wordpress.org/) advanced development.
+
+But I also like to learn new technologies like [React](https://reactjs.org/), or the [Jamstack](https://jamstack.org/)
+
+## My work with WordPress
+As as Web Developer I have used **WordPress like a programming framework** rather than the usual plugins/themes install/configuration approach.
+
+I use a bare bones theme for developers called the [Lean Theme](https://github.com/wearenolte/lean-theme) for creating custom websites. 
+
+I also rely heavily on the use of the [Advance Custom Fields plugin](https://www.advancedcustomfields.com/) to create the backend data structure and the Gutenberg blocks of a website.
+
+## Tech Skills
+- DRY principles
+- Clean Code
+- Linters
+- Functional programming
+- Object Oriented Programming
+- Atomic Design
+
+## Tech Tools
+- PHP (7.3)
+- Javascript (ES6)
+- WordPress (Gutenberg)
+- React
+- Eleventy
+- Tailwind CSS
+- UI components styleguide
+- Parcel, Webpack
+- Lighthouse, Pagespeed
+
+
+## Latest work
+
+### Live WordPress sites:
+
+- [Campus Free Speech Guide](https://campusfreespeechguide.pen.org/)
+
+- [Better Arguments](https://betterarguments.org/)
+
+- [Madison Capital Funding](https://www.mcfllc.com/)
+
+- [Union Square Ventures](https://www.usv.com/)
+
+- [Odie Pet Insurance](https://odiepetinsurance.com/) (React website)
+
+- [Tough Mudder Bootcamp](https://tmbootcamp.com/)
+
+- [Med Control Evaluation](https://www.mceime.com/)
+
+
+---
+Updated: July 2020

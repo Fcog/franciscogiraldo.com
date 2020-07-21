@@ -1,0 +1,27 @@
+[
+  {
+    "title": "LinkedIn",
+    "icon": "linkedin",
+    "url": "https://www.linkedin.com/in/franciscogiraldo/"
+  },
+  {
+    "title": "Github",
+    "icon": "github",
+    "url": "https://github.com/fcog"
+  },
+  {
+    "title": "Facebook",
+    "icon": "facebook",
+    "url": "https://www.facebook.com/francisco.giraldo.torres"
+  },
+  {
+    "title": "Instagram",
+    "icon": "instagram",
+    "url": "https://instagram.com/fcogt"
+  },
+  {
+    "title": "YouTube",
+    "icon": "youtube",
+    "url": "https://www.youtube.com/channel/UCS5YFFu2OKCnsv3UYEU8E2Q"
+  }
+]

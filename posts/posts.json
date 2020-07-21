@@ -1,4 +1,5 @@
 {
+  "main_title": "Francisco's blog",
   "layout": "layouts/post.njk",
   "permalink": "posts/{{ title | slug }}/index.html",
   "tags": [

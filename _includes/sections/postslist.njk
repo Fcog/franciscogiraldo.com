@@ -1,0 +1,18 @@
+{% from "components/article-card.njk" import articleCard %}
+
+<section class="grid gap-6 lg:grid-cols-3">
+
+	{% for post in postslist | reverse %}
+
+		{{ articleCard(
+			post.data.title,
+			post.data.summary,
+			post.url,
+			post.data.image,
+			post.date,
+			post.data.tags,
+			post.data.reading_minutes) }}
+
+	{% endfor %}
+
+</section>

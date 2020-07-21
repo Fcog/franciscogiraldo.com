@@ -1,4 +1,5 @@
 ---
+title: Francisco's blog
 pagination:
   data: collections
   size: 1
@@ -13,12 +14,19 @@ layout: layouts/base.njk
 renderData:
   title: "Tagged “{{ tag }}”"
 ---
+{% include "sections/nav.njk" %}
 
-<h1>Tagged “{{ tag }}”</h1>
+<div class="container mt-40 mb-32">
 
-{% set postslist = collections[ tag ] %}
-{% include "components/postslist.njk" %}
+  <h2 class="mb-16 text-2xl">Tagged “{{ tag }}”</h2>
 
-<nav>
-  <a href="{{ '/blog/' | url }}">← Blog index</a>
-</nav>
+  {% set postslist = collections[ tag ] %}
+  {% include "sections/postslist.njk" %}
+
+  <div class="mt-8">
+  {% include "components/back-button.njk" %}
+  </div>
+
+</div>
+
+{% include "sections/footer.njk" %}

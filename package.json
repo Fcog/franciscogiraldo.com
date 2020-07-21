@@ -3,8 +3,8 @@
   "version": "1.0.3",
   "description": "A boilerplate for building a fast static website with the Eleventy static site generator, for deployment to Netlify.",
   "scripts": {
-    "build": "npx eleventy",
-    "watch": "npx eleventy --watch",
+    "build": "eleventy & NODE_ENV=production postcss styles/tailwind.css --o _site/style.css",
+    "start": "eleventy --serve & postcss styles/tailwind.css --o _tmp/style.css --watch",
     "debug": "DEBUG=* npx eleventy"
   },
   "repository": {
@@ -25,12 +25,20 @@
     "@11ty/eleventy": "^0.11.0-beta.3",
     "luxon": "^1.22.2",
     "markdown-it": "^10.0.0",
-    "markdown-it-anchor": "^5.2.7"
+    "markdown-it-anchor": "^5.2.7",
+    "markdown-it-link-attributes": "^3.0.0",
+    "nunjucks-date-filter": "^0.1.1",
+    "postcss-clean": "^1.1.0",
+    "postcss-cli": "^7.1.1",
+    "tailwindcss": "^1.5.1"
   },
   "dependencies": {
     "@11ty/eleventy-navigation": "^0.1.5",
+    "@tailwindcss/typography": "^0.2.0",
+    "@tailwindcss/ui": "^0.3.1",
     "clean-css": "^4.2.1",
     "html-minifier": "^4.0.0",
+    "particlesjs": "^2.2.3",
     "uglify-es": "^3.3.9"
   }
 }

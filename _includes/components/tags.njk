@@ -1,0 +1,15 @@
+{% for tag in tags %}
+
+    {% if tag != "post" %}
+
+        {% set tagUrl %}/tags/{{ tag }}/{% endset %}
+
+        <a href="{{ tagUrl | url }}"
+           rel="tag"
+           class="mr-2 text-sm leading-5 font-medium text-indigo-600 no-underline hover:underline">
+            #{{ tag }}
+        </a>
+
+    {% endif %}
+
+{% endfor %}
