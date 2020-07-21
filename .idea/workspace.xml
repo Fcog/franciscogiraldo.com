@@ -2,38 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8f097308-b1d3-4bd5-8f15-a8c6a450e737" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/_includes/sections/menu.njk" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_includes/sections/postslist.njk" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/inline.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.eleventy.js" beforeDir="false" afterPath="$PROJECT_DIR$/.eleventy.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_data/metadata.json" beforeDir="false" afterPath="$PROJECT_DIR$/_data/metadata.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_includes/assets/css/inline.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/inline.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_includes/assets/js/inline.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_includes/components/footer.njk" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/sections/footer.njk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_includes/components/form.njk" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/components/form.njk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_includes/components/head.njk" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/components/head.njk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_includes/components/nav.njk" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_includes/components/postslist.njk" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_includes/layouts/base.njk" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/layouts/base.njk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_includes/layouts/blog.njk" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/layouts/blog.njk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_includes/layouts/contact.njk" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/layouts/contact.njk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_includes/layouts/home.njk" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/layouts/home.njk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_includes/layouts/page.njk" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/layouts/page.njk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_includes/layouts/post.njk" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/layouts/post.njk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/about.md" beforeDir="false" afterPath="$PROJECT_DIR$/pages/about.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/blog.md" beforeDir="false" afterPath="$PROJECT_DIR$/pages/blog.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/contact.md" beforeDir="false" afterPath="$PROJECT_DIR$/pages/contact.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/home.md" beforeDir="false" afterPath="$PROJECT_DIR$/pages/home.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/posts/firstpost.md" beforeDir="false" afterPath="$PROJECT_DIR$/posts/firstpost.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/posts/fourthpost.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/posts/posts.json" beforeDir="false" afterPath="$PROJECT_DIR$/posts/posts.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/posts/secondpost.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/posts/thirdpost.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tags.njk" beforeDir="false" afterPath="$PROJECT_DIR$/tags.njk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authors/authors.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/authors/dan-urbanowicz.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/authors/jane-doe.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/authors/john-appleseed.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/authors/john-doe.md" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -128,14 +104,35 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pages/about.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="231">
-                <caret line="11" column="31" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
+              <first_editor relative-caret-position="651">
+                <caret line="27" column="244" lean-forward="true" selection-start-line="27" selection-start-column="244" selection-end-line="27" selection-end-column="244" />
               </first_editor>
               <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="315">
+                <caret line="15" column="10" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/LICENSE">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="441">
+              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
             </state>
           </provider>
         </entry>
@@ -227,6 +224,8 @@
         <option value="$PROJECT_DIR$/posts/firstpost.md" />
         <option value="$PROJECT_DIR$/styles/tailwind.css" />
         <option value="$PROJECT_DIR$/pages/about.md" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/LICENSE" />
       </list>
     </option>
   </component>
@@ -262,82 +261,6 @@
               <item name="franciscogiraldo-eleventy-3" type="b2602c69:ProjectViewProjectNode" />
               <item name="franciscogiraldo-eleventy-3" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="franciscogiraldo-eleventy-3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="franciscogiraldo-eleventy-3" type="462c0819:PsiDirectoryNode" />
-              <item name="_data" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="franciscogiraldo-eleventy-3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="franciscogiraldo-eleventy-3" type="462c0819:PsiDirectoryNode" />
-              <item name="_includes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="franciscogiraldo-eleventy-3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="franciscogiraldo-eleventy-3" type="462c0819:PsiDirectoryNode" />
-              <item name="_includes" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="franciscogiraldo-eleventy-3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="franciscogiraldo-eleventy-3" type="462c0819:PsiDirectoryNode" />
-              <item name="_includes" type="462c0819:PsiDirectoryNode" />
-              <item name="layouts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="franciscogiraldo-eleventy-3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="franciscogiraldo-eleventy-3" type="462c0819:PsiDirectoryNode" />
-              <item name="_includes" type="462c0819:PsiDirectoryNode" />
-              <item name="sections" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="franciscogiraldo-eleventy-3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="franciscogiraldo-eleventy-3" type="462c0819:PsiDirectoryNode" />
-              <item name="_tmp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="franciscogiraldo-eleventy-3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="franciscogiraldo-eleventy-3" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="franciscogiraldo-eleventy-3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="franciscogiraldo-eleventy-3" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="franciscogiraldo-eleventy-3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="franciscogiraldo-eleventy-3" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="icons" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="franciscogiraldo-eleventy-3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="franciscogiraldo-eleventy-3" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="franciscogiraldo-eleventy-3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="franciscogiraldo-eleventy-3" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="franciscogiraldo-eleventy-3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="franciscogiraldo-eleventy-3" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="franciscogiraldo-eleventy-3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="franciscogiraldo-eleventy-3" type="462c0819:PsiDirectoryNode" />
-              <item name="posts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="franciscogiraldo-eleventy-3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="franciscogiraldo-eleventy-3" type="462c0819:PsiDirectoryNode" />
-              <item name="styles" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -346,6 +269,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/posts" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -384,12 +308,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1595266965755</updated>
-      <workItem from="1595266967007" duration="18937000" />
+      <workItem from="1595266967007" duration="19178000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18937000" />
+    <option name="totallyTimeSpent" value="19178000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="1417" extended-state="0" />
@@ -726,13 +650,33 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/pages/about.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="231">
-            <caret line="11" column="31" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
+          <first_editor relative-caret-position="651">
+            <caret line="27" column="244" lean-forward="true" selection-start-line="27" selection-start-column="244" selection-end-line="27" selection-end-column="244" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="315">
+            <caret line="15" column="10" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LICENSE">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
         </state>
       </provider>
     </entry>
