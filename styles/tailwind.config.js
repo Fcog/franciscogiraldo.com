@@ -24,6 +24,9 @@ module.exports = {
         '60vh': '60vh',
         '90vh': '90vh',
       },
+      maxHeight: {
+        '10': '10rem',
+      },
       borderWidth: {
         1: '1px',
         3: '3px',

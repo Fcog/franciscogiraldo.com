@@ -6,7 +6,8 @@
  "start_url": "https://franciscogiraldo.com",
  "theme_color": "#0001fe",
  "background_color": "#0001fe",
- "display": "fullscreen",
+ "display": "standalone",
+ "orientation": "portrait",
  "icons": [
   {
    "src": "android-icon-36x36.png",
