@@ -1,8 +1,8 @@
 ---
 title: My first post using Eleventy
 date: 2020-07-20
-image: eleventy-post.jpg
 summary: Hello eleventy world!
+image: /assets/images/eleventy-post.jpg
 reading_minutes: 1
 tags:
   - webdevelopment
