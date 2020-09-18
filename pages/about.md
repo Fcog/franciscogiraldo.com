@@ -80,4 +80,4 @@ I also rely heavily on the use of the [Advance Custom Fields plugin](https://www
 
 
 ---
-Updated: July 2020
+Updated: September 2020
