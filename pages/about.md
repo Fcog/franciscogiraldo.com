@@ -62,19 +62,21 @@ I also rely heavily on the use of the [Advance Custom Fields plugin](https://www
 
 ### Live WordPress sites:
 
-- [Campus Free Speech Guide](https://campusfreespeechguide.pen.org/)
+- [GCC](https://gcc.com/) - 2020
 
-- [Better Arguments](https://betterarguments.org/)
+- [Campus Free Speech Guide](https://campusfreespeechguide.pen.org/) - 2019
 
-- [Madison Capital Funding](https://www.mcfllc.com/)
+- [Better Arguments](https://betterarguments.org/) - 2019
 
-- [Union Square Ventures](https://www.usv.com/)
+- [Union Square Ventures](https://www.usv.com/) - 2019
 
-- [Odie Pet Insurance](https://odiepetinsurance.com/) (React website)
+- [Tough Mudder Bootcamp](https://tmbootcamp.com/) - 2018
 
-- [Tough Mudder Bootcamp](https://tmbootcamp.com/)
+- [Odie Pet Insurance](https://app.odiepetinsurance.com/get-quote) (React website) - 2018
 
-- [Med Control Evaluation](https://www.mceime.com/)
+- [Madison Capital Funding](https://www.mcfllc.com/) - 2017
+
+- [Med Control Evaluation](https://www.mceime.com/) - 2017
 
 
 ---
