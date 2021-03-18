@@ -9,4 +9,4 @@ Built with Eleventy
 `npm start`
 
 ## Production
-`npm build`
+`npm run build`
