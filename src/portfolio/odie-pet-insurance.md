@@ -6,7 +6,8 @@ client: Thorson Specialty Insurance Services
 client_desc: Odie Pet Insurance Marketing, LLC is a pet health insurance program administered by Thorson Specialty Insurance Services, Inc.
 industry: Insurance
 company_size: 30
-image: odie.png
+image_small: odie-small.png
+image_large: odie-large.png
 website: odiepetinsurance.com
 requirements: [
     "Responsive web design",
@@ -15,13 +16,13 @@ requirements: [
     "Payment integration",
 ]
 project_duration: 2 months
-description: Highly responsive and interactive multi-step form.
+description: Creation of the company's new website including a highly responsive and interactive multi-step form.
 date: 2019-01-01
 type: react
 ---
 
 ## Project Overview
-Creatin of a multi-step interactive form.
+Creation of the company's new website including a highly responsive and interactive multi-step form.
 \
 &nbsp;
 \

@@ -6,7 +6,8 @@ client: Grupo Cementos de Chihuahua
 client_desc: Grupo Cementos de Chihuahua, S.A.B. de C.V. operates as a building products company. The Company produces, distributes, and markets cement, ready-mix concrete, aggregates and other building materials related to the construction industries. Grupo Cementos de Chihuahua serves customers in Mexico, Canada, and the United States.
 industry: Materials
 company_size: 2500
-image: gcc.png
+image_small: gcc-small.png
+image_large: gcc-large.png
 website: www.gcc.com
 requirements: [
     "Responsive web design",

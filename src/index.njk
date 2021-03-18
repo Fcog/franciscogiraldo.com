@@ -165,13 +165,13 @@ css: ["plugins/tiny-slider/tiny-slider.css"]
                     <div class="card project-card">
                         <div class="row no-gutters">
                             <div class="col-lg-4 card-img-holder">
-                                <img src="/assets/images/project/{{ project.data.image }}" class="card-img" alt="Project screenshot">
+                                <img src="/assets/images/project/{{ project.data.image_small }}" class="card-img" alt="Project screenshot">
                             </div>
                             <div class="col-lg-8">
                                 <div class="card-body">
                                     <h5 class="card-title"><a href="{{ project.url }}" class="theme-link">{{ project.data.title }}</a></h5>
                                     <p class="card-text">{{ project.data.description }}</p>
-                                    <p class="card-text"><small class="text-muted">Client: {{ project.data.client }}</small></p>
+                                    <p class="card-text"><small class="text-muted">Technology: {{ project.data.type }}</small></p>
                                 </div>
                             </div>
                         </div>

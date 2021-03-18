@@ -6,7 +6,8 @@ client: ModularHomeowners.com
 client_desc: Founded in 2012 by two brothers, ModularHomeowners.com is committed to providing the most unbiased and up-to-date information on modular and prefabricated homes at absolutely no cost to you.
 industry: Real State
 company_size: 2
-image: modular.png
+image_small: modular-small.png
+image_large: modular-large.png
 website: 
 requirements: [
     "Responsive web design",

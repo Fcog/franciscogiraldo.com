@@ -6,7 +6,8 @@ client: Studio Rodrigo
 client_desc: Studio Rodrigo is an independent design studio, founded in 2012, with a focus on creating great digital products and services.
 industry: Social
 company_size: 30
-image: campus.png
+image_small: campus-small.png
+image_large: campus-large.png
 website: campusfreespeechguide.pen.org
 requirements: [
     "Responsive web design",

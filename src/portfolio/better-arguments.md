@@ -6,7 +6,8 @@ client: Studio Rodrigo
 client_desc: Studio Rodrigo is an independent design studio, founded in 2012, with a focus on creating great digital products and services.
 industry: Social
 company_size: 30
-image: better-arguments.png
+image_small: better-arguments-small.png
+image_large: better-arguments-large.png
 website: betterarguments.org
 requirements: [
     "Responsive web design",
@@ -20,16 +21,16 @@ type: wordpress
 ---
 
 ## Project Overview
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.
+The client wanted a CMS easy to use because the only functionality needed was uploading content.
 \
 &nbsp;
 \
 &nbsp;
 ## The Challenge
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.
+This was a fairly easy project where we could take advantage of WordPress' blogging system.
 \
 &nbsp;
 \
 &nbsp;
 ## The Approach & Solution
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.
+Most of the functionality was created using WordPress' basic setup.
