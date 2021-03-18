@@ -1,0 +1,223 @@
+---
+title: Resume
+layout: layout.njk
+---
+
+<section class="cta-section theme-bg-light py-5">
+    <div class="container text-center single-col-max-width">
+        <h2 class="heading mb-3">Online Resume</h2>
+        <button class="btn btn-primary" onclick="javascript:window.print();">
+            <i class="fas fa-file-pdf mr-2"></i>Download PDF Version
+        </button>
+        
+        
+    </div><!--//container-->
+</section>
+
+<div class="container px-3 px-lg-5">
+    <article class="resume-wrapper mx-auto theme-bg-light p-5 mb-5 my-5 shadow-lg">
+
+        <div class="resume-header">
+            <div class="row align-items-center">
+                <div class="resume-title col-12 col-md-6 col-lg-8 col-xl-9">
+                    <h2 class="resume-name mb-0 text-uppercase">Francisco Giraldo</h2>
+                    <div class="resume-tagline mb-3 mb-md-0">Senior full stack web Engineer/Developer</div>
+                </div><!--//resume-title-->
+                <div class="resume-contact col-12 col-md-6 col-lg-4 col-xl-3">
+                    <ul class="list-unstyled mb-0">
+                        <li class="mb-2"><i class="fas fa-phone-square fa-fw fa-lg mr-2 "></i>
+                            <a class="resume-link" href="tel:573225166770">+57 3225166770</a>
+                        </li>
+                        <li class="mb-2"><i class="fas fa-envelope-square fa-fw fa-lg mr-2"></i>
+                            <a class="resume-link" href="mailto:fcog111@gmail.com">fcog111@gmail.com</a>
+                        </li>
+                        <li class="mb-2"><i class="fas fa-globe fa-fw fa-lg mr-2"></i>
+                            <a class="resume-link" target="_blank" href="https://franciscogiraldo.com">franciscogiraldo.com</a>
+                        </li>
+                        <li class="mb-0"><i class="fas fa-map-marker-alt fa-fw fa-lg mr-2"></i>
+                            <a 
+                                class="resume-link"
+                                target="_blank"
+                                href="https://www.google.com/maps/place/Cali,+Valle+del+Cauca/@3.3950619,-76.5957046,12z/data=!3m1!4b1!4m5!3m4!1s0x8e30a6f0cc4bb3f1:0x1f0fb5e952ae6168!8m2!3d3.4516467!4d-76.5319854">
+                                Cali, Colombia
+                            </a>
+                        </li>
+                    </ul>
+                </div><!--//resume-contact-->
+            </div><!--//row-->
+            
+        </div><!--//resume-header-->
+
+        <hr>
+
+        <div class="resume-intro py-3">
+            <div class="media flex-column flex-md-row align-items-center">
+                <img class="resume-profile-image mb-3 mb-md-0 mr-md-5 ml-md-0 rounded mx-auto" src="/assets/images/Francisco Giraldo.jpg" alt="Profile image">
+                <div class="media-body text-left">
+                    <p class="mb-0">Passionate Full Stack Web Developer with over 8 years of experience
+        building and maintaining websites and web apps. Francisco has participated as lead developer in the design,
+        implementation and maintenance phases of many small and medium web projects. However, he excels in the
+        implementation phase where he enjoys coding using best practices and methodologies for ensuring
+        a performant and maintainable code. He also enjoys mentoring junior developers with code reviews and guidance.</p>
+                </div><!--//media-body-->
+            </div>
+        </div><!--//resume-intro-->
+
+        <hr>
+
+        <div class="resume-body">
+            <div class="row">
+            
+                <div class="resume-main col-12 col-lg-8 col-xl-9 pr-0 pr-lg-5">
+                    <section class="work-section py-3">
+                        <h3 class="text-uppercase resume-section-heading mb-4">Work Experience</h3>
+
+                        {% for work in resume.work_experience %}
+
+                            <div class="item mb-4">
+                                <div class="item-heading row align-items-center mb-2">
+                                    <h4 class="item-title col-12 col-md-6 mb-2 mb-md-0">{{ work.role }}</h4>
+                                    <div class="item-meta col-12 col-md-6 text-muted text-left text-md-right">
+                                        <a target="_blank" href="{{ work.company_website }}">
+                                            {{ work.company }}
+                                        </a> | {{ work.date_start }} - {{ work.date_end }}
+                                    </div>
+                                    
+                                </div>
+                                <div class="item-content">
+                                    <p>{{ work.description }}</p>
+                                    <ul class="resume-list">
+                                        {% for task in work.tasks %}
+                                            <li>{{ task }}</li>
+                                        {% endfor %}
+                                    </ul>
+                                </div>
+                            </div><!--//item-->
+
+                        {% endfor %}
+                        
+                    </section><!--//work-section-->
+
+                    
+                    <section class="project-section py-3">
+                        <h3 class="text-uppercase resume-section-heading mb-4">Latest Projects</h3>
+
+                        {% for project in collections.project | sort(true, false, 'date') %}
+                            {% if loop.index0 < 3 %}
+
+                                <div class="item mb-3">
+                                    <div class="item-heading row align-items-center mb-2">
+                                        <h4 class="item-title col-12 col-md-6 col-lg-8 mb-2 mb-md-0">{{ project.data.title }} </h4>
+                                        <div class="item-meta col-12 col-md-6 col-lg-4 text-muted text-left text-md-right">{{ project.data.type }}</div>
+                                        
+                                    </div>
+                                    <div class="item-content">
+                                        <p>{{ project.data.description }}</p>
+                                    </div>
+                                </div><!--//item-->
+                            {% endif %}
+
+                        {% endfor %}
+
+                    </section><!--//project-section-->	
+                </div><!--//resume-main-->
+
+                <aside class="resume-aside col-12 col-lg-4 col-xl-3 px-lg-4 pb-lg-4">
+
+                    <section class="skills-section pb-3 pt-2">
+
+                        <h3 class="text-uppercase resume-section-heading mb-3">Hard Skills</h3>
+                        
+                        {% for skill in resume.hard_skills %}
+
+                            <div class="item">
+
+                                {% if skill.title %}
+                                    <h4 class="item-title">{{ skill.title }}</h4>
+                                {% endif %}    
+
+                                <ul class="list-unstyled resume-skills-list">
+                                    {% for item in skill.items %}
+                                        <li class="mb-1">{{ item }}</li>
+                                    {% endfor %}
+                                </ul>
+
+                            </div><!--//item-->
+
+                        {% endfor %}
+
+                    </section><!--//skills-section-->    
+
+                    <section class="skills-section py-2">    
+
+                        <h3 class="text-uppercase resume-section-heading mb-3">Soft Skills</h3>
+
+                        <div class="item">
+
+                            <ul class="list-unstyled resume-skills-list">
+                                {% for skill in resume.soft_skills %}
+                                    <li class="mb-1">{{ skill }}</li>
+                                {% endfor %}
+                            </ul>
+                            
+                        </div><!--//item-->    
+
+                    </section><!--//skills-section-->                  
+
+
+                    <section class="education-section py-2">
+                        <h3 class="text-uppercase resume-section-heading mb-3">Education</h3>
+                        <ul class="list-unstyled resume-education-list">
+
+                            {% for education in resume.education %}
+                                <li class="mb-2">
+                                    <div class="resume-degree font-weight-bold">{{ education.degree }}</div>
+                                    <div class="resume-degree-org text-muted">{{ education.location }}</div>
+                                    <div class="resume-degree-time text-muted">{{ education.years }}</div>
+                                </li>
+                            {% endfor %}
+
+                        </ul>
+                    </section><!--//education-section-->
+
+                    <section class="skills-section py-2">
+                        <h3 class="text-uppercase resume-section-heading mb-3">Languages</h3>
+                        <ul class="list-unstyled resume-lang-list">
+                            <li class="mb-1">Spanish <span class="text-muted">(Native)</span></li>
+                            <li class="mb-1">English <span class="text-muted">(Advanced)</span></li>
+                            <li>French <span class="text-muted">(Intermediate)</span></li>
+                        </ul>
+                    </section><!--//certificates-section-->
+
+
+                    <section class="skills-section py-3">
+                        <h3 class="text-uppercase resume-section-heading mb-3">Interests</h3>
+                        <ul class="list-unstyled resume-interests-list mb-0">
+                            <li class="mb-1">Music/Guitar</li>
+                            <li class="mb-1">Inline Skating</li>
+                            <li class="mb-1">Hicking</li>
+                            <li>Video Games</li>
+                        </ul>
+                    </section><!--//certificates-section-->
+                            
+                </aside><!--//resume-aside-->
+
+            </div><!--//row-->
+        </div><!--//resume-body-->
+
+        <hr>
+
+        <div class="resume-footer text-center">
+            <ul class="resume-social-list list-inline mx-auto mb-0 d-inline-block text-muted">
+                <li class="list-inline-item mb-lg-0 mr-3"><a class="resume-link" href="#">
+                    <i class="fab fa-github-square fa-2x mr-2" data-fa-transform="down-4"></i><span class="d-none d-lg-inline-block text-muted">github.com/fcog</span></a>
+                </li>
+                <li class="list-inline-item mb-lg-0 mr-3"><a class="resume-link" href="#">
+                    <i class="fab fa-linkedin fa-2x mr-2" data-fa-transform="down-4"></i><span class="d-none d-lg-inline-block text-muted">linkedin.com/in/franciscogiraldo</span></a>
+                </li>
+            </ul>
+        </div><!--//resume-footer-->
+
+    </article>
+    
+</div><!--//container-->        

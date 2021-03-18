@@ -1,0 +1,147 @@
+{
+    "work_experience": [
+        {
+            "role": "Web Development Engineer",
+            "company": "Freelancer",
+            "company_website": "https://franciscogiraldo.com/",
+            "date_start": "Jan 2021",
+            "date_end": "Current",
+            "description": "I'm currently working as a freelancer.",
+            "tasks": [
+                "Create a website with Django and Wagtail CMS."
+            ]
+        },
+        {
+            "role": "Product Engineer",
+            "company": "Nolte",
+            "company_website": "https://nolte.io",
+            "date_start": "Sept 2016",
+            "date_end": "Dec 2020",
+            "description": "I worked remotely for this small agency from New York city. Here I learned very good coding practices like doing code reviews, creating clean code, using linters and setting up continious deployment.",
+            "tasks": [
+                "Lead developer of more than 20 small/medium size WordPress websites.",
+                "Lead developer of 1 NodeJS/React website.",
+                "Mentoring junior developers with code reviews and 1 on 1.",
+                "Assist to meetings with clients."
+            ]
+        },
+        {
+            "role": "Web Development Engineer",
+            "company": "El País S.A.",
+            "company_website": "https://www.elpais.com.co/",
+            "date_start": "Mar 2014",
+            "date_end": "Aug 2016",
+            "description": "I worked here for a big media/newspaper company from my home country.",
+            "tasks": [
+                "Development of multiple small websites and landing pages with WordPress and Drupal 6.",
+                "Maintainance of the company's main high traffic websites and webapps.",
+                "Assisting to the company's tech meetings."
+            ]
+        },
+        {
+            "role": "Web Developer",
+            "company": "Freelance",
+            "company_website": "https://franciscogiraldo.com/",
+            "date_start": "Apr 2015",
+            "date_end": "Feb 2014",
+            "description": "I worked as a freelancer for 2 clients from the USA.",
+            "tasks": [
+                "Created more than 10 custom WordPress websites."
+            ]
+        },
+        {
+            "role": "Junior Developer",
+            "company": "InQbation",
+            "company_website": "https://www.inqbation.com/",
+            "date_start": "Sept 2012",
+            "date_end": "Apr 2013",
+            "description": "This was my first experience working in a Startup company. Clients were from the USA but I worked in the company's local office.",
+            "tasks": [
+                "Assisting on the development of WordPress and Drupal websites.",
+                "Development of an app using the Facebook API.",
+                "Assist to scrum meetings."
+            ]
+        },
+        {
+            "role": "Junior Developer",
+            "company": "BRM Grandes Interacciones",
+            "company_website": "https://www.brm.com.co/",
+            "date_start": "Apr 2012",
+            "date_end": "Sept 2012",
+            "description": "I moved to Bogotá to start working for this big marketing agency to work for the Avianca team, the biggest air flights company of Colombia.",
+            "tasks": [
+                "Created multiple interactive contests apps with the Facebook and Twitter API."
+            ]
+        },
+        {
+            "role": "Junior Developer",
+            "company": "ICDL Colombia",
+            "company_website": "https://www.faceit.org.co/",
+            "date_start": "Apr 2012",
+            "date_end": "Sept 2012",
+            "description": "Worked for this small company as webmaster and also as web developer.",
+            "tasks": [
+                "Maintained the company's main website made in Joomla.",
+                "Created a quiz app with PHP."
+            ]
+        },
+        {
+            "role": "Intern - Support Engineer",
+            "company": "Colgate Palmolive Colombia",
+            "company_website": "https://www.colgatepalmolive.com.co/",
+            "date_start": "Nov 2009",
+            "date_end": "Dec 2010",
+            "description": "I worked for this big international company as an intern in the area of Marketing and later was hired as a contractor.",
+            "tasks": [
+                "Helped migrating the consumer feedback system from American data to Colombian data.",
+                "Assist reps on the use of the system."
+            ]
+        } 
+    ],
+    "hard_skills": [
+        {
+            "title": "Programming Languages",
+            "items": [
+                "PHP",
+                "Python",
+                "Javascript",
+                "HTML",
+                "CSS"
+            ]
+        },
+        {
+            "title": "Frameworks",
+            "items": [
+                "Django",
+                "ExpressJS",
+                "React",
+                "Svelte",
+                "TailwindCSS",
+                "Bootstrap"
+            ]
+        },
+        {
+            "title": "CMS",
+            "items": [
+                "WordPress",
+                "Wagtail"
+            ]
+        }
+    ],
+    "soft_skills": [
+        "Written and verbal communication",
+        "Motivation",
+        "Teamwork",
+        "Work ethic",
+        "Time management",
+        "Self-reliant",
+        "Problem Solving"
+    ],
+    "education": [
+        {
+            "degree": "Bachelor of computer science and engineering",
+            "location": "Universidad Javeriana Cali",
+            "years": "2005 - 2010"
+        }
+    ]
+}

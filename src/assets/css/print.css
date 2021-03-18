@@ -1,0 +1,29 @@
+.header,
+.cta-section,
+.resume-section-heading:before {
+    display: none;
+}
+
+.resume-wrapper {
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.resume-main,
+.resume-title {
+    flex: none !important;
+    max-width: 75% !important;
+    padding-right: 4rem !important;
+}
+
+.resume-aside,
+.resume-contact {
+    max-width: 25% !important;
+}
+
+.resume-section-heading {
+    padding-left: 0 !important;
+}

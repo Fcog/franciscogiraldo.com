@@ -1,0 +1,76 @@
+---
+layout: layout.njk
+---
+
+<section class="cta-section theme-bg-light py-5">
+    <div class="container single-col-max-width">
+        <h2 class="heading text-center">Case Study: {{ title }}</h2>
+        <div class="project-intro text-center">
+            <p class="mb-0 lead">{{ client_desc }}</p>
+        </div>
+        
+    </div><!--//container-->
+</section>
+
+<section class="project px-3 py-5 p-md-5">
+    <div class="container">
+        <div class="project-meta media flex-column flex-md-row p-4 theme-bg-light">
+            <img class="project-thumb mb-3 mb-md-0 mr-md-5 rounded d-none d-md-inline-block" src="/assets/images/project/{{ image }}" alt="Project screenshot">
+            <div class="media-body">
+                <div class="client-info">
+
+                    <div class="d-flex justify-content-between">
+                        <h3 class="client-name font-weight-bold mb-4">{{ client }}</h3>
+                        {% if current_project %}
+                            <span><i class="fas fa-star fa-fw mr-2 text-yellow"></i><strong class="text-yellow text-shadow">Current project</strong></span>
+                        {% endif %}
+                    </div>                        
+
+                    <ul class="client-meta list-unstyled">
+                        <li class="mb-2"><i class="fas fa-industry fa-fw mr-2"></i><strong>Industry:</strong> {{ industry }}</li>
+                        <li class="mb-2"><i class="fas fa-users fa-fw mr-2"></i><strong>Size:</strong> +{{ company_size }}</li>
+                        
+                        {% if website %}
+                            <li class="mb-2">
+                                <strong><i class="fas fa-link fa-fw mr-2"></i>Website:</strong> 
+                                <a class="theme-link" target="_blank" href="https://{{ website }}">{{ website }}</a>
+                                <i class="fas fa-external-link-alt fa-fw ml-2"></i>
+                            </li>
+                        {% endif %}
+
+                    </ul>
+                    <div class="client-bio mb-4">{{ description }}</div>
+
+                    <h4 class="subheading mb-3">Project Requirements</h4>
+                    <ul class="mb-0">
+                        {% if requirements %}
+                            {% for requirement in requirements %}
+                                <li class="mb-2">{{ requirement }}</li>
+                            {% endfor %}			
+                        {% endif %}
+                    </ul>
+
+                    <ul class="client-meta list-unstyled">
+                        <li class="subheading mt-3"><i class="fas fa-clock fa-fw mr-2"></i><strong>Project Duration:</strong> {{ project_duration }}</li>
+                    </ul>
+
+                </div>					
+            </div><!--//media-body-->
+        </div><!--//project-meta-->
+
+        <div class="project-sections py-5">
+
+            {{ content | safe }}
+
+        </div>
+
+    </div>
+</section>
+
+<section class="promo-section theme-bg-light py-5 text-center">
+    <div class="container single-col-max-width">
+        <h2 class="title">Want me to help with your project?</h2>
+        <p>Drop me a message with your project description and requirements.</p>
+        <div class="text-center"><a class="btn btn-primary" href="/contact"><i class="fas fa-paper-plane mr-2"></i>Message Me</a></div>
+    </div><!--//container-->
+</section><!--//promo-section-->

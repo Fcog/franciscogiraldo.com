@@ -1,0 +1,61 @@
+---
+title: Blog
+layout: layout.njk
+pagination:
+  data: collections.post
+  size: 4
+---
+
+<section class="cta-section theme-bg-light py-5">
+    <div class="container text-center">
+        <h2 class="heading">A Blog About Software Development</h2>
+        <div class="intro">Welcome to my blog. Subscribe and get my latest blog post in your inbox.</div>
+        <form class="signup-form form-inline justify-content-center pt-3">
+            <div class="form-group">
+                <label class="sr-only" for="semail">Your email</label>
+                <input type="email" id="semail" name="semail1" class="form-control mr-md-1 semail" placeholder="Enter email">
+            </div>
+            <button type="submit" disabled class="btn btn-primary">Subscribe</button>
+        </form>
+    </div><!--//container-->
+</section>
+
+<section class="blog-list px-3 py-5 p-md-5">
+    <div class="container">
+
+        <div class="row">
+
+            {% for post in collections.post %}
+                <div class="col-md-4 mb-3">
+                    <div class="card blog-post-card">
+                        <img class="card-img-top" src="/assets/images/blog/{{ post.data.image }}" alt="{{ post.data.image.desc }}">
+                        <div class="card-body">
+                            <h5 class="card-title"><a class="theme-link" href="{{ post.url }}">{{ post.data.title }}</a></h5>
+                            <p class="card-text">{{ post.data.excerpt }}</p>
+                            <p class="mb-0"><a class="more-link" href="{{ post.url }}">Read more &rarr;</a></p>
+                            
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">Published {{ post.date.toUTCString() }}</small>
+                        </div>
+                    </div><!--//card-->
+                </div><!--//col-->
+            {% endfor %}  
+
+        </div><!--//row-->
+        
+        
+        <nav class="blog-nav nav nav-justified my-5">
+        
+            {% if pagination.pageNumber - 1 >= 0 %}
+            <a class="nav-link-prev nav-item nav-link d-none rounded-left" href="/blog/{{ pagination.pageNumber - 1 }}">Previous<i class="arrow-prev fas fa-long-arrow-alt-left"></i></a>
+            {% endif %}
+
+            {% if pagination.pageNumber + 1 > 1 %}
+            <a class="nav-link-next nav-item nav-link rounded" href="/blog/{{ pagination.pageNumber + 1 }}">Next<i class="arrow-next fas fa-long-arrow-alt-right"></i></a>
+            {% endif %}
+
+        </nav>
+        
+    </div>
+</section>

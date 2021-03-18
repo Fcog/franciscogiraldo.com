@@ -1,0 +1,17 @@
+{
+  "name": "franciscogiraldo.com",
+  "version": "1.0.0",
+  "description": "Personal Website",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "@11ty/eleventy": "^0.11.1"
+  },
+  "scripts": {
+    "build": "eleventy",
+    "clean": "rm -rf dist",
+    "start": "eleventy --serve"
+  },
+  "author": "Francisco Giraldo",
+  "license": "ISC"
+}

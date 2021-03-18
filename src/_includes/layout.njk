@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+	<title>{{ title }}</title>
+	
+	<!-- Meta -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="DevCard Bootstrap 4 Template">
+	<meta name="author" content="Xiaoying Riley at 3rd Wave Media">    
+	<link rel="shortcut icon" href="/favicon.ico"> 
+	
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+	
+	<!-- FontAwesome JS -->
+    <script defer src="/assets/fontawesome/js/all.min.js"></script>
+
+	<!-- Theme CSS -->  
+	<link id="theme-style" rel="stylesheet" href="/assets/css/theme.css">
+
+	<link rel="stylesheet" href="/assets/css/print.css" type="text/css" media="print" />
+
+	{% if css %}
+		{% for css_path in css %}
+			<link rel="stylesheet" href="/assets/{{css_path}}" />
+		{% endfor %}			
+    {% endif %}	
+
+</head> 
+
+<body>
+	
+	<header class="header text-center">	    
+		<div class="force-overflow">
+			<h1 class="blog-name pt-lg-4 mb-0"><a href="/">Francisco Giraldo</a></h1>
+			
+			<nav class="navbar navbar-expand-lg navbar-dark" >
+				
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				
+				<div id="navigation" class="collapse navbar-collapse flex-column" >
+					<div class="profile-section pt-3 pt-lg-0">
+						<img class="profile-image mb-3 rounded-circle mx-auto" src="/assets/images/Francisco Giraldo.jpg" alt="image" >			
+						
+						<div class="bio mb-3">Hi, my name is Francisco Giraldo and I'm a senior web developer. Welcome to my personal website!</div><!--//bio-->
+						<ul class="social-list list-inline py-2 mx-auto">
+							<li class="list-inline-item"><a target="_blank" href="https://www.linkedin.com/in/franciscogiraldo"><i class="fab fa-linkedin-in fa-fw"></i></a></li>
+							<li class="list-inline-item"><a target="_blank" href="https://github.com/Fcog"><i class="fab fa-github-alt fa-fw"></i></a></li>
+							<li class="list-inline-item"><a target="_blank" href="https://stackoverflow.com/users/3435779/francisco-giraldo"><i class="fab fa-stack-overflow fa-fw"></i></a></li>
+							<li class="list-inline-item"><a target="_blank" class="medium" href="https://medium.com/@franciscogiraldotorres"><i class="fab fa-medium-m fa-fw"></i></a></li>
+							<li class="list-inline-item"><a target="_blank" href="https://twitter.com/fcogt"><i class="fab fa-twitter fa-fw"></i></a></li>
+						</ul><!--//social-list-->
+						<hr> 
+					</div><!--//profile-section-->
+					
+					<ul class="navbar-nav flex-column text-left">
+						<li class="nav-item {% if '' == page.url %}active{% endif %}">
+							<a class="nav-link" href="/"><i class="fas fa-user fa-fw mr-2"></i>About Me<span class="sr-only">(current)</span></a>
+						</li>
+						<li class="nav-item {% if '/portfolio' in page.url %}active{% endif %}">
+							<a class="nav-link" href="/portfolio"><i class="fas fa-laptop-code fa-fw mr-2"></i>Portfolio</a>
+						</li>
+						<!-- 
+						<li class="nav-item {% if '/services' in page.url %}active{% endif %}">
+							<a class="nav-link" href="/services"><i class="fas fa-briefcase fa-fw mr-2"></i>Services &amp; Pricing</a>
+						</li>
+						-->
+						<li class="nav-item {% if '/resume' in page.url %}active{% endif %}">
+							<a class="nav-link" href="/resume"><i class="fas fa-file-alt fa-fw mr-2"></i>Resume</a>
+						</li>
+						<li class="nav-item {% if '/blog' in page.url %}active{% endif %}">
+							<a class="nav-link" href="/blog"><i class="fas fa-blog fa-fw mr-2"></i>Blog</a>
+						</li>
+						<li class="nav-item {% if '/contact' in page.url %}active{% endif %}">
+							<a class="nav-link" href="/contact"><i class="fas fa-envelope-open-text fa-fw mr-2"></i>Contact</a>
+						</li>
+					</ul>
+					
+					<div class="my-2">
+						<a class="btn btn-primary" href="/contact"><i class="fas fa-paper-plane mr-2"></i>Message Me</a>
+					</div>
+
+					<div class="dark-mode-toggle text-center w-100">
+						<hr class="mb-4">
+					    <h4 class="toggle-name mb-3 "><i class="fas fa-adjust mr-1"></i>Dark Mode</h4>
+					    
+					    <input class="toggle" id="darkmode" type="checkbox">
+					    <label class="toggle-btn mx-auto mb-0" for="darkmode"></label>
+					    
+					</div><!--//dark-mode-toggle-->					
+					
+				</div>
+			</nav>
+		</div><!--//force-overflow-->
+	</header>
+	
+	<div class="main-wrapper">
+		
+        {{ content | safe }}
+		
+	</div><!--//main-wrapper-->
+
+	<!-- Javascript -->         
+	<script src="/assets/plugins/jquery-3.4.1.min.js"></script> 
+	<script src="/assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Dark Mode -->
+	<script src="/assets/js/dark-mode.js"></script>	
+
+	{% if js %}
+		{% for js_path in js %}
+			<script src="/assets/{{js_path}}"></script>
+		{% endfor %}			
+    {% endif %}
+	
+</body>
+</html> 
+

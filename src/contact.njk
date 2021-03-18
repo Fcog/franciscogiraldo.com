@@ -1,0 +1,71 @@
+---
+title: Contact
+layout: layout.njk
+---
+
+<section class="cta-section theme-bg-light py-5">
+    <div class="container text-center single-col-max-width">
+        <h2 class="heading">Contact</h2>
+        <div class="intro">
+        <p>Interested in hiring me for your project or just want to say hi? You can fill in the contact form below or send me an email to <a href="mailto:fcog111@gmail.com">fcog111@gmail.com</a></p>
+        <p>Want to get connected? Follow me on the social channels below.</p>
+        <ul class="list-inline mb-0">
+            <li class="list-inline-item mb-3"><a target="_blank" class="twitter" href="https://twitter.com/fcogt"><i class="fab fa-twitter fa-fw fa-lg"></i></a></li>
+            <li class="list-inline-item mb-3"><a target="_blank" class="linkedin" href="https://www.linkedin.com/in/franciscogiraldo"><i class="fab fa-linkedin-in fa-fw fa-lg"></i></a></li>
+            <li class="list-inline-item mb-3"><a target="_blank" class="github" href="https://github.com/Fcog"><i class="fab fa-github-alt fa-fw fa-lg"></i></a></li>
+            <li class="list-inline-item mb-3"><a target="_blank" class="stack-overflow" href="https://stackoverflow.com/users/3435779/francisco-giraldo"><i class="fab fa-stack-overflow fa-fw fa-lg"></i></a></li>
+            <li class="list-inline-item mb-3"><a target="_blank" class="medium" href="https://medium.com/@franciscogiraldotorres"><i class="fab fa-medium-m fa-fw fa-lg"></i></a></li>
+            <li class="list-inline-item mb-3"><a target="_blank" class="codepen" href="https://codepen.io/fcog"><i class="fab fa-codepen fa-fw fa-lg"></i></a></li>
+        </ul><!--//social-list-->
+        
+    </div><!--//container-->
+</section>
+<section class="contact-section px-3 py-5 p-md-5">
+    <div class="container">
+        <form id="contact-form" class="contact-form col-lg-8 mx-lg-auto" name="contact" method="POST" netlify>
+            <h3 class="text-center mb-3">Get In Touch</h3>
+            <div class="form-row">                                                           
+                <div class="form-group col-md-6">
+                    <label class="sr-only" for="name">Name</label>
+                    <input
+                        type="text" 
+                        class="form-control" 
+                        id="name" 
+                        name="name" 
+                        placeholder="Name" 
+                        minlength="2" 
+                        required="" 
+                        autocomplete="name"
+                        aria-required="true">
+                </div>                    
+                <div class="form-group col-md-6">
+                    <label class="sr-only" for="email">Email</label>
+                    <input 
+                        type="email" 
+                        class="form-control" 
+                        id="email" 
+                        name="email" 
+                        placeholder="Email" 
+                        autocomplete="email"
+                        required="" 
+                        pattern="^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*(\.\w{2,})+$"
+                        aria-required="true">
+                </div>
+                <div class="form-group col-12">
+                    <label class="sr-only" for="message">Your message</label>
+                    <textarea 
+                        class="form-control" 
+                        id="message" 
+                        name="message" 
+                        placeholder="Enter your message" 
+                        rows="10" 
+                        required="" 
+                        aria-required="true"></textarea>
+                </div>
+                    <div class="form-group col-12">
+                    <button type="submit" class="btn btn-block btn-primary py-2">Send Now</button>
+                </div>                           
+            </div><!--//form-row-->
+        </form>
+    </div><!--//container-->
+</section>
