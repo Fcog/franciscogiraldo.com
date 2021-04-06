@@ -1,5 +1,6 @@
 ---
 layout: blog.njk
+post_id: 1
 tags: post
 title: Django VS WordPress
 image: django-wordpress.jpg

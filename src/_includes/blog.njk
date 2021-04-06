@@ -11,11 +11,11 @@ css: ["plugins/highlight/styles/monokai-sublime.css"]
             <div class="meta mb-3">
                 <span class="date">Published {{ date_published }}</span>
                 <span class="time">{{ mins }} min read</span>
-                <span class="comment"><a href="#disqus_thread">4 comments</a></span>
+                <span class="comment"><a href="https://franciscogiraldo.com{{ page.url }}#disqus_thread"></a></span>
                 </div>
         </header>
         
-        <div class="blog-post-body">
+        <div class="blog-post-body mb-6">
             <figure class="blog-banner">
                 <img class="img-fluid w-100" src="/assets/images/blog/{{ image }}" alt="{{ image_desc }}">
                 {% if image_desc %}
@@ -27,37 +27,45 @@ css: ["plugins/highlight/styles/monokai-sublime.css"]
             
         </div>
             
+        {% if nextPost.url or prevPost.url %}
+
+        <h3>Keep reading other of my blog posts!</h3>
+
         <nav class="blog-nav nav nav-justified my-5">
-            <a class="nav-link-prev nav-item nav-link rounded-left" href="#">Previous<i class="arrow-prev fas fa-long-arrow-alt-left"></i></a>
-            <a class="nav-link-next nav-item nav-link rounded-right" href="#">Next<i class="arrow-next fas fa-long-arrow-alt-right"></i></a>
+
+            {% if nextPost.url %}
+            <a class="nav-link-prev nav-item nav-link rounded-left" href="{{ nextPost.url }}">
+                Previous article: <i class="arrow-prev fas fa-long-arrow-alt-left"></i>
+                {{ nextPost.data.title }}
+            </a>
+            {% endif %}
+
+            {% if prevPost.url %}
+            <a class="nav-link-next nav-item nav-link rounded-right" href="{{ prevPost.url }}">
+                Next article: <i class="arrow-next fas fa-long-arrow-alt-right"></i>
+                {{ prevPost.data.title }}
+            </a>
+            {% endif %}
+
         </nav>
+
+        {% endif %}
         
         <div class="blog-comments-section">
             <div id="disqus_thread"></div>
             <script>
-                /**
-                    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT 
-                    *  THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR 
-                    *  PLATFORM OR CMS.
-                    *  
-                    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: 
-                    *  https://disqus.com/admin/universalcode/#configuration-variables
-                    */
-                /*
                 var disqus_config = function () {
                     // Replace PAGE_URL with your page's canonical URL variable
-                    this.page.url = PAGE_URL;  
+                    this.page.url = "https://franciscogiraldo.com{{ page.url }}";  
                     
                     // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-                    this.page.identifier = PAGE_IDENTIFIER; 
+                    this.page.identifier = {{ post_id }}; 
                 };
-                */
                 
-                (function() {  // REQUIRED CONFIGURATION VARIABLE: EDIT THE SHORTNAME BELOW
+                (function() {  // DON'T EDIT BELOW THIS LINE
                     var d = document, s = d.createElement('script');
                     
-                    // IMPORTANT: Replace 3wmthemes with your forum shortname!
-                    s.src = 'https://3wmthemes.disqus.com/embed.js';
+                    s.src = 'https://franciscogiraldo.disqus.com/embed.js';
                     
                     s.setAttribute('data-timestamp', +new Date());
                     (d.head || d.body).appendChild(s);
@@ -73,3 +81,5 @@ css: ["plugins/highlight/styles/monokai-sublime.css"]
         
     </div><!--//container-->
 </article>
+
+<script id="dsq-count-scr" src="//franciscogiraldo.disqus.com/count.js" async></script>

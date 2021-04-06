@@ -1,5 +1,6 @@
 ---
 layout: blog.njk
+post_id: 2
 tags: post
 title: Set Up WordPress with Docker
 image: docker-compose-wordpress.png
@@ -21,15 +22,14 @@ excerpt: Standardize your WordPress environment setup using Docker Compose.
 \
 &nbsp;
 ## 2. Download the configuration files
-Download the configuration files: [https://github.com/Fcog/docker-compose-wp-composer](https://github.com/Fcog/docker-compose-wp-composer).
+Download the configuration files: [https://github.com/Fcog/docker-compose-wp-composer](https://github.com/Fcog/docker-compose-wp-composer)
 \
 &nbsp;
 \
 &nbsp;
 ## 3. Installation
 run ``docker compose up`` or ``docker-compose up``
-\
-&nbsp;
+
 Go to [http://0.0.0.0:8000/](http://0.0.0.0:8000/)
 \
 &nbsp;
