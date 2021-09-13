@@ -1,14 +1,27 @@
 {
     "work_experience": [
         {
+            "role": "PHP Developer",
+            "company": "Creative Fabrica",
+            "company_website": "https://www.creativefabrica.com/",
+            "date_start": "July 2021",
+            "date_end": "Current",
+            "description": "Full stack PHP developer working on a high traffic website.",
+            "tasks": [
+                "Development of new features.",
+                "Existing feature improvements",
+                "Bug fixing."
+            ]
+        },        
+        {
             "role": "Web Development Engineer",
             "company": "Freelancer",
             "company_website": "https://franciscogiraldo.com/",
             "date_start": "Jan 2021",
-            "date_end": "Current",
-            "description": "I'm currently working as a freelancer.",
+            "date_end": "Jun 2021",
+            "description": "Worked creating a Django website using Wagtail CMS.",
             "tasks": [
-                "Create a website with Django and Wagtail CMS."
+                "Development of the backend as well as the frontend."
             ]
         },
         {
