@@ -1,16 +1,18 @@
 {
     "work_experience": [
         {
-            "role": "PHP Developer",
+            "role": "PHP backend Developer",
             "company": "Creative Fabrica",
             "company_website": "https://www.creativefabrica.com/",
             "date_start": "July 2021",
             "date_end": "Current",
-            "description": "Full stack PHP developer working on a high traffic website.",
+            "description": "Creative Fabrica is a fast paced startup that has a big e-commerce platform with millions of users created with WordPress. The company is working on scaling the platform by moving to microservices written with Laravel. My job here is to fix bugs and update the main WordPress website with new requirements.",
             "tasks": [
-                "Development of new features.",
-                "Existing feature improvements",
+                "Development of new requirements for the main website using PHP OOP combined with Wordpress.",
                 "Bug fixing."
+            ],
+            "technologies": [
+                "PHP", "WordPress", "Docker", "GIT", "PHPUnit", "Continous Integration"
             ]
         },        
         {
@@ -22,6 +24,9 @@
             "description": "Worked creating a Django website using Wagtail CMS.",
             "tasks": [
                 "Development of the backend as well as the frontend."
+            ],
+            "technologies": [
+                "Python", "Django", "TailwindCSS", "Docker", "GIT"
             ]
         },
         {
@@ -36,6 +41,9 @@
                 "Lead developer of 1 NodeJS/React website.",
                 "Mentoring junior developers with code reviews and 1 on 1.",
                 "Assist to meetings with clients."
+            ],
+            "technologies": [
+                "PHP", "WordPress", "TailwindCSS", "GIT", "Continous Integration"
             ]
         },
         {
@@ -49,6 +57,9 @@
                 "Development of multiple small websites and landing pages with WordPress and Drupal 6.",
                 "Maintainance of the company's main high traffic websites and webapps.",
                 "Assisting to the company's tech meetings."
+            ],
+            "technologies": [
+                "PHP", "WordPress", "Drupal 6", "GIT", "Symfony 1"
             ]
         },
         {
@@ -60,6 +71,9 @@
             "description": "I worked as a freelancer for 2 clients from the USA.",
             "tasks": [
                 "Created more than 10 custom WordPress websites."
+            ],
+            "technologies": [
+                "PHP", "WordPress", "SASS", "GIT"
             ]
         },
         {
@@ -73,6 +87,9 @@
                 "Assisting on the development of WordPress and Drupal websites.",
                 "Development of an app using the Facebook API.",
                 "Assist to scrum meetings."
+            ],
+            "technologies": [
+                "PHP", "WordPress", "SASS", "GIT"
             ]
         },
         {
@@ -84,6 +101,9 @@
             "description": "I moved to Bogotá to start working for this big marketing agency to work for the Avianca team, the biggest air flights company of Colombia.",
             "tasks": [
                 "Created multiple interactive contests apps with the Facebook and Twitter API."
+            ],
+            "technologies": [
+                "PHP"
             ]
         },
         {
@@ -96,6 +116,9 @@
             "tasks": [
                 "Maintained the company's main website made in Joomla.",
                 "Created a quiz app with PHP."
+            ],
+            "technologies": [
+                "PHP"
             ]
         },
         {

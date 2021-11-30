@@ -57,9 +57,8 @@ layout: layout.njk
                 <div class="media-body text-left">
                     <p class="mb-0">Passionate Full Stack Web Developer with over 8 years of experience
         building and maintaining websites and web apps. Francisco has participated as lead developer in the design,
-        implementation and maintenance phases of many small and medium web projects. However, he excels in the
-        implementation phase where he enjoys coding using best practices and methodologies for ensuring
-        a performant and maintainable code. He also enjoys mentoring junior developers with code reviews and guidance.</p>
+        implementation and maintenance phases of many small and medium web projects. He enjoys designing and coding using best practices and methodologies for ensuring
+        a performant, scalable and maintainable code like SOLID principles and Pattern Designs. He also enjoys mentoring junior developers with code reviews and guidance.</p>
                 </div><!--//media-body-->
             </div>
         </div><!--//resume-intro-->
@@ -92,6 +91,14 @@ layout: layout.njk
                                             <li>{{ task }}</li>
                                         {% endfor %}
                                     </ul>
+                                    <div class="d-inline-flex">
+                                        <p>Techonologies: </p>
+                                        <ul class="list-inline">
+                                            {% for tech in work.technologies %}
+                                                <li class="badge">{{ tech }}</li>
+                                            {% endfor %}
+                                        </ul>
+                                    </div>
                                 </div>
                             </div><!--//item-->
 
