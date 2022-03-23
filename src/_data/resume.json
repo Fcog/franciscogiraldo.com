@@ -149,6 +149,7 @@
         {
             "title": "Frameworks",
             "items": [
+                "Laravel",
                 "Django",
                 "ExpressJS",
                 "React",
@@ -166,11 +167,11 @@
         }
     ],
     "soft_skills": [
-        "Written and verbal communication",
-        "Motivation",
+        "Ownership of tasks",
+        "Good written and verbal communication",
+        "Motivated",
         "Teamwork",
-        "Work ethic",
-        "Time management",
+        "Ethical",
         "Self-reliant",
         "Problem Solving"
     ],
