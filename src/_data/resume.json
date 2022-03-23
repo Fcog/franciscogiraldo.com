@@ -5,14 +5,15 @@
             "company": "Creative Fabrica",
             "company_website": "https://www.creativefabrica.com/",
             "date_start": "July 2021",
-            "date_end": "Current",
+            "date_end": "March 2022",
             "description": "Creative Fabrica is a fast paced startup that has a big e-commerce platform with millions of users created with WordPress. The company is working on scaling the platform by moving to microservices written with Laravel. My job here is to fix bugs and update the main WordPress website with new requirements.",
             "tasks": [
                 "Development of new requirements for the main website using PHP OOP combined with Wordpress.",
-                "Bug fixing."
+                "Bug fixing.",
+                "Creation of advanced SQL queries within a very big Database"
             ],
             "technologies": [
-                "PHP", "WordPress", "Docker", "GIT", "PHPUnit", "Continous Integration"
+                "PHP", "WordPress", "SQL", "Docker", "GIT", "PHPUnit", "jQuery", "CSS", "HTML", "AWS", "Algolia", "Continous Integration"
             ]
         },        
         {
