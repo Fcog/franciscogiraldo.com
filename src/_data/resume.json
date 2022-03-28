@@ -6,14 +6,15 @@
             "company_website": "https://www.creativefabrica.com/",
             "date_start": "July 2021",
             "date_end": "March 2022",
-            "description": "Creative Fabrica is a fast paced startup that has a big e-commerce platform with millions of users created with WordPress. The company is working on scaling the platform by moving to microservices written with Laravel. My job here is to fix bugs and update the main WordPress website with new requirements.",
+            "description": "Creative Fabrica is a fast paced startup that has a large e-commerce platform with millions of users. The company is working on scaling the platform by moving the main WordPress website to microservices written with Laravel. I started initially fixing bugs and improving features of the web application. I later joined the Supply team which was in charge of the functionality to add the products to the the site.",
             "tasks": [
-                "Development of new requirements for the main website using PHP OOP combined with Wordpress.",
-                "Bug fixing.",
-                "Creation of advanced SQL queries within a very big Database"
+                "Integration of webservices into the monolithic site.",
+                "Improvement of existing features.",
+                "Investigation of issues and bug fixing.",
+                "Creation of reports using advanced SQL queries."
             ],
             "technologies": [
-                "PHP", "WordPress", "SQL", "Docker", "GIT", "PHPUnit", "jQuery", "CSS", "HTML", "AWS", "Algolia", "Continous Integration"
+                "PHP", "WordPress", "SQL", "Docker", "GIT", "PHPUnit", "jQuery", "Javascript", "CSS", "HTML", "AWS", "Algolia", "Metabase", "Continous Integration"
             ]
         },        
         {
@@ -27,7 +28,7 @@
                 "Development of the backend as well as the frontend."
             ],
             "technologies": [
-                "Python", "Django", "TailwindCSS", "Docker", "GIT"
+                "Python", "Django", "TailwindCSS", "Docker", "GIT", "MySQL"
             ]
         },
         {
@@ -44,7 +45,7 @@
                 "Assist to meetings with clients."
             ],
             "technologies": [
-                "PHP", "WordPress", "TailwindCSS", "GIT", "Continous Integration"
+                "PHP", "WordPress", "TailwindCSS", "GIT", "Continous Integration", "MySQL"
             ]
         },
         {
@@ -53,14 +54,14 @@
             "company_website": "https://www.elpais.com.co/",
             "date_start": "Mar 2014",
             "date_end": "Aug 2016",
-            "description": "I worked here for a big media/newspaper company from my home country.",
+            "description": "I worked here for a big media/newspaper company with a very large audience.",
             "tasks": [
                 "Development of multiple small websites and landing pages with WordPress and Drupal 6.",
                 "Maintainance of the company's main high traffic websites and webapps.",
                 "Assisting to the company's tech meetings."
             ],
             "technologies": [
-                "PHP", "WordPress", "Drupal 6", "GIT", "Symfony 1"
+                "PHP", "WordPress", "Drupal 6", "GIT", "Symfony 1", "MySQL"
             ]
         },
         {
@@ -90,7 +91,7 @@
                 "Assist to scrum meetings."
             ],
             "technologies": [
-                "PHP", "WordPress", "SASS", "GIT"
+                "PHP", "WordPress", "SASS", "GIT", "Drupal 7"
             ]
         },
         {
@@ -101,10 +102,10 @@
             "date_end": "Sept 2012",
             "description": "I moved to Bogotá to start working for this big marketing agency to work for the Avianca team, the biggest air flights company of Colombia.",
             "tasks": [
-                "Created multiple interactive contests apps with the Facebook and Twitter API."
+                "Created multiple interactive contests apps using the Facebook and Twitter API."
             ],
             "technologies": [
-                "PHP"
+                "PHP", "MySQL", "Facebook API", "Twitter API"
             ]
         },
         {
@@ -119,7 +120,7 @@
                 "Created a quiz app with PHP."
             ],
             "technologies": [
-                "PHP"
+                "PHP", "MySQL", "Joomla"
             ]
         },
         {
@@ -149,11 +150,10 @@
         {
             "title": "Frameworks",
             "items": [
+                "Symfony",
                 "Laravel",
                 "Django",
-                "ExpressJS",
                 "React",
-                "Svelte",
                 "TailwindCSS",
                 "Bootstrap"
             ]

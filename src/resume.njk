@@ -22,7 +22,7 @@ layout: layout.njk
             <div class="row align-items-center">
                 <div class="resume-title col-12 col-md-6 col-lg-8 col-xl-9">
                     <h2 class="resume-name mb-0 text-uppercase">Francisco Giraldo</h2>
-                    <div class="resume-tagline mb-3 mb-md-0">Senior full stack web Engineer/Developer</div>
+                    <div class="resume-tagline mb-3 mb-md-0 font-weight-bold">Senior Full Stack Web Developer</div>
                 </div><!--//resume-title-->
                 <div class="resume-contact col-12 col-md-6 col-lg-4 col-xl-3">
                     <ul class="list-unstyled mb-0">
@@ -57,8 +57,9 @@ layout: layout.njk
                 <div class="media-body text-left">
                     <p class="mb-0">Passionate Full Stack Web Developer with over 8 years of experience
         building and maintaining websites and web apps. Francisco has participated as lead developer in the design,
-        implementation and maintenance phases of many small and medium web projects. He enjoys designing and coding using best practices and methodologies for ensuring
-        a performant, scalable and maintainable code like SOLID principles and Pattern Designs. He also enjoys mentoring junior developers with code reviews and guidance.</p>
+        implementation and maintenance phases of many small and medium web projects. He has also worked fixing, maintaining and improving large hight traffic web applications. He enjoys designing and coding 
+        using best practices and methodologies for ensuringa performant, scalable and maintainable code like SOLID principles, Pattern Designs and Tests.</p>
+                    <a target="_blank" href="https://franciscogiraldo.com">More info</a>
                 </div><!--//media-body-->
             </div>
         </div><!--//resume-intro-->
@@ -108,8 +109,16 @@ layout: layout.njk
 
                     
                     <section class="project-section py-3">
-                        <h3 class="text-uppercase resume-section-heading mb-4">Latest Projects</h3>
 
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <h3 class="text-uppercase resume-section-heading mb-4">Latest Projects</h3>
+                            </div>
+                            <div class="col-sm-6 text-right">
+                                <a href="https://franciscogiraldo.com/portfolio">View all</a>
+                            </div>
+                        </div>
+                        
                         {% for project in collections.project | sort(true, false, 'date') %}
                             {% if loop.index0 < 3 %}
 
@@ -217,11 +226,23 @@ layout: layout.njk
 
         <div class="resume-footer text-center">
             <ul class="resume-social-list list-inline mx-auto mb-0 d-inline-block text-muted">
-                <li class="list-inline-item mb-lg-0 mr-3"><a class="resume-link" href="#">
-                    <i class="fab fa-github-square fa-2x mr-2" data-fa-transform="down-4"></i><span class="d-none d-lg-inline-block text-muted">github.com/fcog</span></a>
+                <li class="list-inline-item mb-lg-0 mr-3">
+                    <a class="resume-link" href="https://github.com/fcog" target="_blank">
+                        <i class="fab fa-github-square fa-2x mr-2" data-fa-transform="down-4"></i>
+                        <span class="d-none d-lg-inline-block text-muted">github.com/fcog</span>
+                    </a>
                 </li>
-                <li class="list-inline-item mb-lg-0 mr-3"><a class="resume-link" href="#">
-                    <i class="fab fa-linkedin fa-2x mr-2" data-fa-transform="down-4"></i><span class="d-none d-lg-inline-block text-muted">linkedin.com/in/franciscogiraldo</span></a>
+                <li class="list-inline-item mb-lg-0 mr-3">
+                    <a class="resume-link" href="https://linkedin.com/in/franciscogiraldo" target="_blank">
+                        <i class="fab fa-linkedin fa-2x mr-2" data-fa-transform="down-4"></i>
+                        <span class="d-none d-lg-inline-block text-muted">linkedin.com/in/franciscogiraldo</span>
+                    </a>
+                </li>
+                <li class="list-inline-item mb-lg-0 mr-3">
+                    <a class="resume-link" href="https://franciscogiraldo.com" target="_blank">
+                        <i class="fas fa-globe fa-2x mr-2" data-fa-transform="down-4"></i>
+                        <span class="d-none d-lg-inline-block text-muted">franciscogiraldo.com</span>
+                    </a>    
                 </li>
             </ul>
         </div><!--//resume-footer-->
