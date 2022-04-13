@@ -9,7 +9,8 @@ js: ["plugins/imagesloaded.pkgd.min.js", "plugins/isotope.pkgd.min.js", "js/isot
     <div class="container text-center single-col-max-width">
         <h2 class="heading">Portfolio</h2>
         <div class="intro">
-        <p>Welcome to my online portfolio. I'm taking on freelance work at the moment. Want some help building your software?</p>
+        <p>Welcome to my online portfolio.</p>
+        <p>I'm currently open to work.</p>
         
         </div>
         <a class="btn btn-primary" href="/contact"><i class="fas fa-paper-plane mr-2"></i>Hire Me</a>
@@ -22,9 +23,11 @@ js: ["plugins/imagesloaded.pkgd.min.js", "plugins/isotope.pkgd.min.js", "js/isot
         <div class="text-center">
             <ul id="filters" class="filters mb-5 mx-auto pl-0">
                 <li class="type active mb-3 mb-lg-0" data-filter="*">All</li>
-                <li class="type  mb-3 mb-lg-0" data-filter=".wordpress">WordPress websites</li>
-                <li class="type  mb-3 mb-lg-0" data-filter=".react">React websites</li>
-                <li class="type  mb-3 mb-lg-0" data-filter=".django">Django Websites</li>
+                <li class="type  mb-3 mb-lg-0" data-filter=".wordpress">WordPress</li>
+                <li class="type  mb-3 mb-lg-0" data-filter=".symfony">Symfony</li>
+                <li class="type  mb-3 mb-lg-0" data-filter=".laravel">Laravel</li>
+                <li class="type  mb-3 mb-lg-0" data-filter=".react">ExpressJS/React</li>
+                <li class="type  mb-3 mb-lg-0" data-filter=".django">Django</li>
             </ul><!--//filters-->
         </div>
         
@@ -35,9 +38,11 @@ js: ["plugins/imagesloaded.pkgd.min.js", "plugins/isotope.pkgd.min.js", "js/isot
                 <div class="isotope-item col-md-6 mb-5 mobileapp {{ project.data.type }}">
                     <div class="card project-card">
                         <div class="row no-gutters">
+                            {% if project.data.image_small %}
                             <div class="col-lg-4 card-img-holder">
                                 <img src="/assets/images/project/{{ project.data.image_small }}" class="card-img" alt="Project screenshot">
                             </div>
+                            {% endif %}
                             <div class="col-lg-8">
                                 <div class="card-body">
                                     <div class="d-flex justify-content-between">

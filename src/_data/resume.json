@@ -8,13 +8,14 @@
             "date_end": "March 2022",
             "description": "Creative Fabrica is a fast paced startup that has a large e-commerce platform with millions of users. The company is working on scaling the platform by moving the main WordPress website to microservices written with Laravel. I started initially fixing bugs and improving features of the web application. I later joined the Supply team which was in charge of the functionality to add the products to the the site.",
             "tasks": [
-                "Integration of webservices into the monolithic site.",
+                "Integration of external and internal services into the main site.",
                 "Improvement of existing features.",
-                "Investigation of issues and bug fixing.",
-                "Creation of reports using advanced SQL queries."
+                "Investigation and solving of functionality and data issues.",
+                "Functionality bug fixing",
+                "Creation of reports using advanced SQL queries on a custom Dashboard and Metabase."
             ],
             "technologies": [
-                "PHP", "WordPress", "SQL", "Docker", "GIT", "PHPUnit", "jQuery", "Javascript", "CSS", "HTML", "AWS", "Algolia", "Metabase", "Continous Integration"
+                "PHP", "WordPress", "Laravel", "SQL", "Docker", "GIT", "PHPUnit", "jQuery", "Javascript", "CSS", "HTML", "AWS", "Algolia", "Metabase", "Continous Integration"
             ]
         },        
         {
@@ -37,15 +38,16 @@
             "company_website": "https://nolte.io",
             "date_start": "Sept 2016",
             "date_end": "Dec 2020",
-            "description": "I worked remotely for this small agency from New York city. Here I learned very good coding practices like doing code reviews, creating clean code, using linters and setting up continious deployment.",
+            "description": "I worked remotely for this small digital agency from New York city. Here I learned very good coding practices like doing code reviews, creating clean code, using linters and setting up continious deployment.",
             "tasks": [
-                "Lead developer of more than 20 small/medium size WordPress websites.",
-                "Lead developer of 1 NodeJS/React website.",
+                "Developement of more than 20 small/medium size WordPress websites.",
+                "Developement of one NodeJS/React website with an interactive multi-step form.",
+                "Developement of one API with Laravel.",
                 "Mentoring junior developers with code reviews and 1 on 1.",
                 "Assist to meetings with clients."
             ],
             "technologies": [
-                "PHP", "WordPress", "TailwindCSS", "GIT", "Continous Integration", "MySQL"
+                "PHP", "WordPress", "Laravel", "React", "NodeJS", "TailwindCSS", "GIT", "Continous Integration", "MySQL"
             ]
         },
         {

@@ -18,6 +18,7 @@ css: ["plugins/lightbox2/css/lightbox.min.css"]
     <div class="container">
         <div class="project-meta media flex-column flex-md-row p-4 theme-bg-light">
 
+            {% if image_large %}
             <div>
                 <a href="/assets/images/project/{{ image_large }}" data-lightbox="project-image"  data-title="Homepage">            
                     <img 
@@ -27,6 +28,7 @@ css: ["plugins/lightbox2/css/lightbox.min.css"]
                 </a>
                 <p><i class="fas fa-search-plus fa-fw mr-2"></i>Click image to expand</p>
             </div>    
+            {% endif %}
             
             <div class="media-body">
                 <div class="client-info">
@@ -46,6 +48,14 @@ css: ["plugins/lightbox2/css/lightbox.min.css"]
                             <li class="mb-2">
                                 <strong><i class="fas fa-link fa-fw mr-2"></i>Project Website:</strong> 
                                 <a class="theme-link" target="_blank" href="https://{{ website }}">{{ website }}</a>
+                                <i class="fas fa-external-link-alt fa-fw ml-2"></i>
+                            </li>
+                        {% endif %}
+
+                        {% if github %}
+                            <li class="mb-2">
+                                <strong><i class="fas fa-link fa-fw mr-2"></i>Github:</strong> 
+                                <a class="theme-link" target="_blank" href="https://{{ github }}">{{ github }}</a>
                                 <i class="fas fa-external-link-alt fa-fw ml-2"></i>
                             </li>
                         {% endif %}

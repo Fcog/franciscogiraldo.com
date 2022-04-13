@@ -8,17 +8,18 @@ industry: Real State
 company_size: 2
 image_small: modular-small.png
 image_large: modular-large.png
-website: 
+website: modular-homeowners-iy3cf.ondigitalocean.app/
+github: github.com/Fcog/modular-home-owners
 requirements: [
     "Responsive web design",
     "Advanced search with multiple filters",
     "Forum app integration",
 ]
-project_duration: 2 months
+project_duration: 4 months
 description: Real State web application with an advanced homes search filtering and a forum. 
 date: 2021-03-01
 type: django
-current_project: true
+current_project: false
 ---
 
 ## Project Overview
