@@ -22,3 +22,14 @@
 .text-u {
     text-decoration: underline;
 }
+
+.blog-post-body img {
+    width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.blog-post-body h2,
+.blog-post-body h3 {
+    margin-top: 2rem;
+}
