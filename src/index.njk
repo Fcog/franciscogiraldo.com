@@ -334,7 +334,7 @@ css: ["plugins/tiny-slider/tiny-slider.css"]
 
         <div class="row">
 
-            {% for post in collections.posts %}
+            {% for post in collections.posts | reverse %}
                 {% if loop.index0 < 3 %}
                 <div class="col-md-4 mb-5">
                     <div class="card blog-post-card">

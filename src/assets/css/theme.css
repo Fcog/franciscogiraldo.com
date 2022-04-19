@@ -30,6 +30,7 @@
 }
 
 .blog-post-body h2,
-.blog-post-body h3 {
+.blog-post-body h3,
+.blog-post-body h4 {
     margin-top: 2rem;
 }
