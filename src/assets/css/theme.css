@@ -24,7 +24,8 @@
 }
 
 .blog-post-body img {
-    width: 100%;
+    max-width: 100%;
+    max-height: 600px;
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
@@ -32,5 +33,6 @@
 .blog-post-body h2,
 .blog-post-body h3,
 .blog-post-body h4 {
-    margin-top: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
 }

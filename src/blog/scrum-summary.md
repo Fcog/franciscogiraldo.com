@@ -5,8 +5,9 @@ tags: post
 title: Scrum Summary
 image: scrum.png
 date: 2022-04-19
-mins: 1
+mins: 10
 excerpt: Scrum explained with images.
+post_tags: ['Project Management']
 ---
 
 Scrum is a popular agile software development framework that focuses on flexibility, responsiveness to change, and teamwork. It’s a lightweight framework designed to help teams deliver working products quickly and with better quality than traditional frameworks.
