@@ -7,7 +7,7 @@ image:
 date: 2022-04-21
 mins: 10
 excerpt: Brief explanation of the benefits of using SOA.
-post_tags: ['Service Oriented Arquitecture']
+post_tags: ['Arquitecture']
 ---
 
 Summary taken from arcitura.com

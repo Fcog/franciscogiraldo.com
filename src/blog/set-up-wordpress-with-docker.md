@@ -7,6 +7,7 @@ image: docker-compose-wordpress.png
 date: 2021-04-01
 mins: 1
 excerpt: Standardize your WordPress environment setup using Docker Compose.
+post_tags: ['DevOps']
 ---
 
 ## Overview of Docker Compose

@@ -7,7 +7,7 @@ image: messenger-symfony.png
 date: 2022-04-19
 mins: 10
 excerpt: Run asynchronous code using messages with Symfony
-post_tags: ['Service Oriented Arquitecture', 'symfony']
+post_tags: ['Arquitecture', 'symfony']
 ---
 
 This is a summary of the [Messenger course](https://symfonycasts.com/screencast/messenger) by SymfonyCasts.

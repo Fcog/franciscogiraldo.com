@@ -5,9 +5,8 @@ tags: post
 title: API Platform
 image: 
 date: 2022-04-19
-mins: 5
+mins: 1
 excerpt: API Platform with Symfony.
-status: draft
 post_tags: ['rest API', 'symfony']
 ---
 
