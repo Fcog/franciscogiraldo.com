@@ -6,16 +6,14 @@
             "company_website": "https://www.creativefabrica.com/",
             "date_start": "July 2021",
             "date_end": "March 2022",
-            "description": "Creative Fabrica is a fast paced startup that has a large e-commerce platform with millions of users. The company is working on scaling the platform by moving the main WordPress website to microservices written with Laravel. I started initially fixing bugs and improving features of the web application. I later joined the Supply team which was in charge of the functionality to add the products to the the site.",
+            "description": "Fast paced startup with a global e-commerce platform with millions of users. The company is working on scaling the platform by moving the main WordPress website to microservices written with Laravel. Started initially fixing bugs and improving features of the web application. Later joined the Supply team which was in charge of the functionality to add the products to the the site.",
             "tasks": [
-                "Integration of external and internal services into the main site.",
-                "Improvement of existing features.",
-                "Investigation and solving of functionality and data issues.",
-                "Functionality bug fixing",
-                "Creation of reports using advanced SQL queries on a custom Dashboard and Metabase."
+                "Contributed to scale the company's existing system by leveraging functionality into microservices.",
+                "Contributed to improve the internal operations system by creating and improving existing processes.",
+                "Investigated and solved production issues/bugs by debuging and using logs."
             ],
             "technologies": [
-                "PHP", "WordPress", "Laravel", "SQL", "Docker", "GIT", "PHPUnit", "jQuery", "Javascript", "CSS", "HTML", "AWS", "Algolia", "Metabase", "Continous Integration"
+                "PHP", "OOP", "Laravel", "SQL", "Docker", "GIT", "PHPUnit", "Javascript", "AWS", "Algolia", "Metabase", "Continous Integration"
             ]
         },        
         {
@@ -29,7 +27,7 @@
                 "Development of the backend as well as the frontend."
             ],
             "technologies": [
-                "Python", "Django", "TailwindCSS", "Docker", "GIT", "MySQL"
+                "Python", "Django", "TailwindCSS", "Docker", "GIT", "PostgreSQL"
             ]
         },
         {
@@ -38,13 +36,9 @@
             "company_website": "https://nolte.io",
             "date_start": "Sept 2016",
             "date_end": "Dec 2020",
-            "description": "I worked remotely for this small digital agency from New York city. Here I learned very good coding practices like doing code reviews, creating clean code, using linters and setting up continious deployment.",
+            "description": "Worked remotely 4 years for this small digital agency from New York city. Learned coding using best practices like code reviews, clean code, linters and continious deployment.",
             "tasks": [
-                "Developement of more than 20 small/medium size WordPress websites.",
-                "Developement of one NodeJS/React website with an interactive multi-step form.",
-                "Developement of one API with Laravel.",
-                "Mentoring junior developers with code reviews and 1 on 1.",
-                "Assist to meetings with clients."
+                "Developement of more than 15 medium websites and web applications."
             ],
             "technologies": [
                 "PHP", "WordPress", "Laravel", "React", "NodeJS", "TailwindCSS", "GIT", "Continous Integration", "MySQL"
@@ -56,7 +50,7 @@
             "company_website": "https://www.elpais.com.co/",
             "date_start": "Mar 2014",
             "date_end": "Aug 2016",
-            "description": "I worked here for a big media/newspaper company with a very large audience.",
+            "description": "Worked here for a big media/newspaper company with a very large audience.",
             "tasks": [
                 "Development of multiple small websites and landing pages with WordPress and Drupal 6.",
                 "Maintainance of the company's main high traffic websites and webapps.",
@@ -72,7 +66,7 @@
             "company_website": "https://franciscogiraldo.com/",
             "date_start": "Apr 2014",
             "date_end": "Feb 2015",
-            "description": "I worked as a freelancer for 2 clients from the USA.",
+            "description": "Worked as a freelancer for 2 clients from the USA.",
             "tasks": [
                 "Created more than 10 custom WordPress websites."
             ],
@@ -86,7 +80,7 @@
             "company_website": "https://www.inqbation.com/",
             "date_start": "Sept 2012",
             "date_end": "Apr 2013",
-            "description": "This was my first experience working in a Startup company. Clients were from the USA but I worked in the company's local office.",
+            "description": "First experience working in a Startup company. Clients were from the USA but I worked in the company's local office.",
             "tasks": [
                 "Assisting on the development of WordPress and Drupal websites.",
                 "Development of an app using the Facebook API.",
@@ -102,7 +96,7 @@
             "company_website": "https://www.brm.com.co/",
             "date_start": "Apr 2012",
             "date_end": "Sept 2012",
-            "description": "I moved to Bogotá to start working for this big marketing agency to work for the Avianca team, the biggest air flights company of Colombia.",
+            "description": "Moved to Bogotá to start working for this big marketing agency to work for the Avianca team, the biggest air flights company of Colombia.",
             "tasks": [
                 "Created multiple interactive contests apps using the Facebook and Twitter API."
             ],
@@ -144,9 +138,7 @@
             "items": [
                 "PHP",
                 "Python",
-                "Javascript",
-                "HTML",
-                "CSS"
+                "Javascript"
             ]
         },
         {
@@ -155,27 +147,18 @@
                 "Symfony",
                 "Laravel",
                 "Django",
-                "React",
-                "TailwindCSS",
-                "Bootstrap"
-            ]
-        },
-        {
-            "title": "CMS",
-            "items": [
-                "WordPress",
-                "Wagtail"
+                "NodeJS/ExpressJS"
             ]
         }
     ],
     "soft_skills": [
+        "Problem Solving",
         "Ownership of tasks",
         "Good written and verbal communication",
         "Motivated",
         "Teamwork",
         "Ethical",
-        "Self-reliant",
-        "Problem Solving"
+        "Self-reliant"
     ],
     "education": [
         {
