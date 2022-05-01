@@ -7,6 +7,14 @@ module.exports = (config) => {
     });
     config.setDataDeepMerge(true);
 
+    let markdownIt = require("markdown-it");
+    let markdownItEmoji = require("markdown-it-emoji");
+    let options = {
+        html: true
+    };
+    let markdownLib = markdownIt(options)
+    config.setLibrary("md", markdownLib);
+
     config.addCollection("posts", function(collection) {
         const posts_collection = collection.getFilteredByTag("post");
 

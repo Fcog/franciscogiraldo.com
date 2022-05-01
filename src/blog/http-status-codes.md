@@ -1,6 +1,6 @@
 ---
 layout: blog.njk
-post_id: 9
+post_id: 10
 tags: post
 title: HTTP Status Codes
 image: 
