@@ -13,7 +13,7 @@
                 "Investigated and solved production issues/bugs by debuging and using logs."
             ],
             "technologies": [
-                "PHP", "OOP", "Laravel", "SQL", "Docker", "GIT", "PHPUnit", "Javascript", "AWS", "Algolia", "Metabase", "Continous Integration"
+                "PHP", "OOP", "Laravel", "SQL", "Docker", "GIT", "PHPUnit", "Javascript", "AWS", "Algolia", "Redis", "RabbitMQ", "Metabase", "Continous Integration"
             ]
         },        
         {

@@ -22,7 +22,7 @@ Event sourcing is the practice of building application state from only domain ev
 
 Every interaction with an object triggers an event. Each event contain individual information from the object state.
 
-## Flow
+## WorkFlow
 
 1. Check business rules (called Invariants)
 2. Event is raised
