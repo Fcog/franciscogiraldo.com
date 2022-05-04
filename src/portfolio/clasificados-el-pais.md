@@ -18,15 +18,19 @@ type: symfony
 ## Project Overview
 When working at El Pais S.A., I was in the team assigned to modernize this Classifieds web application. 
 
-## Challenge
-
-The project had high code complexity. The app was initially created as a generic ads system so there were many small Classes built to achieve this. This made the codebase was very large with many modules and difficult to understand. It was created by an external company so none of the internal Developers could support us. Extra care was needed so no new bugs were introduced.
-
 ## Objectives
 
 The whole website was revamped with a more modern and minimalistic design provided by the internal design team. 
 
 The design HTML and CSS was handed to the development team where we decomposed it into reusable UI components. 
+
+## Challenge
+
+The project had high code complexity. The app was initially created as a generic ads system so the Backend and the Frontend codebase was huge with many modules. 
+
+The system was created by an external company so none of the internal Developers could support or guide us. 
+
+And Extra care was needed so no new bugs were introduced.
 
 ### Main epics: 
 
