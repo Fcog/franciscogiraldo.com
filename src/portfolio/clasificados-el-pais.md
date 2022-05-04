@@ -16,13 +16,12 @@ type: symfony
 ---
 
 ## Project Overview
-When working at El Pais S.A., I was in the team assigned to modernize this Classifieds web application. 
+When working at El Pais S.A., I was in the team assigned to modernize the Classifieds web application written with the Symfony PHP framework. This web app is one of the most important and used online ads portal in the southwestern region of Colombia.
 
-## Objectives
+## Main Objective
 
-The whole website was revamped with a more modern and minimalistic design provided by the internal design team. 
+Improve the User Experience and User Interface of all the user facing pages. Including the homepage, the search page, the ads uploading form, and the ads detail page.
 
-The design HTML and CSS was handed to the development team where we decomposed it into reusable UI components. 
 
 ## Challenge
 
@@ -34,7 +33,7 @@ And Extra care was needed so no new bugs were introduced.
 
 ### Main epics: 
 
-#### Change the User Interface of the Ads product detail page.
+#### Change the User Interface of the Ads detail page.
 
 New modern elements were added: 
 - New images slider with thumbnails
@@ -47,9 +46,14 @@ Visit: [https://clasificados.elpais.com.co/](https://clasificados.elpais.com.co/
 
 #### Improve the User Experience of the Ads Search Page.
 
-The Search Page UX was improved by adding more untuituve filtering widgets and adding image slides to each of the individual search results.
+The Search Page UX was improved with many modern elements like: 
 
-![Filters](/assets/images/project/el-pais-filters.jpg)
+- intuituve filtering widgets 
+- Image slides to each of the individual search results
+- List and Grid views on the results section
+- An ads comparaison new feature
+
+![Filters](/assets/images/project/el-pais-search-page.jpg)
 
 Visit: [https://fincaraiz.elpais.com.co/avisos/venta/casas](https://fincaraiz.elpais.com.co/avisos/venta/casas)
 
@@ -61,3 +65,12 @@ The old multi-step form to upload an Ad was replaced with a single intuitive and
 ![Ad uploading](/assets/images/project/el-pais-upload.jpg)
 
 Visit: [https://fincaraiz.elpais.com.co/publicarAviso/avisoWeb](https://fincaraiz.elpais.com.co/publicarAviso/avisoWeb)
+
+
+## The Approach & Solution
+
+The design HTML and CSS was handed to us by the design team and we decomposed it into reusable UI components. 
+
+Integration tests were written before starting to change any code.
+
+Each of the epics functionalities was thoroughly tested manually by the product owner on the Staging site.
