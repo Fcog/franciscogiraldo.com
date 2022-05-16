@@ -64,7 +64,7 @@ If the code is confusing you should move it to a new class, method or function. 
 
 ## Open-Closed Principle
 
-### Definition:
+### Definition
 
 A module should be open for extension, but closed for modification.
 
@@ -116,13 +116,13 @@ With Symfony you can tell the Container to use the extended class instead of the
 
 Clients should not be forced to depend on interfaces they do not use.
 
-## Explanation
+### Explanation
 
 In the definition, interfaces are not refering to a literal interface but to the abstract concept of an interface, which generally means the public methods of a class.
 
 A class shouldn't be required to have a method that don't need just because it is set in an Interface. You should segragate the interface into smaller interfaces to be able to use them when appropiate.
 
-## Benefits
+### Benefits
 
 1. Having smaller interfaces helps on having smaller classes with a more specific task that fits its purpose.
 
@@ -132,13 +132,13 @@ A class shouldn't be required to have a method that don't need just because it i
 
 ## Dependency Inversion Principle
 
-## Definition
+### Definition
 
 High level modules should not depend on low level modules. Both should depend on abstractions.
 
 Abstractions should not depend on details. Details should depend on abstractions.
 
-## Explanation
+### Explanation
 
 Classes should depend on interfaces instead of concrete classes.
 
@@ -146,13 +146,13 @@ An interface should be designed by the class that will use it (the high level cl
 
 There is an inversion of control, the high level class is now in charge and tell the low level class, or dependeny, what methods needs to implement.
 
-## Benefits
+### Benefits
 
 It decouples the dependencies.
 
 Helpful in open source code or shared code.
 
-## Drawbacks
+### Drawbacks
 
 Not all dependencies need to be inverted. It only is worth when there might be multiple ways of implementing the low level class.
 
