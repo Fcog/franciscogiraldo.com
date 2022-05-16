@@ -16,6 +16,14 @@ At its worst business logic can be very complex. Rules and logic describe many d
 
 This are the main concepts behind DDD:
 
+## Bounded Context
+
+A Bounded Context is a defined part of software where particular terms, definitions and rules apply in a consistent way. 
+
+A part of the domain where the concepts are related to each other and so it make a cohesive unit.
+
+A system is composed of multiple decoupled bounded contexts. This creates a cleanner communication between them.
+
 ## Entities
 
 An Entity is used to represent or model a part of the system which ***have an identifier***. For example, a person is different than another person because it has a unique Residence ID.
