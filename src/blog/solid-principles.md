@@ -14,7 +14,7 @@ Summary based on the [SOLID course](https://symfonycasts.com/screencast/solid) f
 
 # SOLID Principles
 
-This principles are a guideline to create better structured code which is easier to add or modify features.
+This principles are a guideline to create better structured code which is easier to add or modify features. But is only that: a guideline. Do your best to write simple code and don't over think it.
 
 - Single-Responsability Principle
 
@@ -77,7 +77,11 @@ Imagine the future changes you will most likely need to make... then design the 
 Use Design Patterns to acheive this:
 
 - Strategy pattern
-- Template Pattern
+- Template Method Pattern
+
+### Takeaways
+
+A system can't be 100% OCP compliant. An unexpected change will eventually make you change the code.
 
 ## Liskov Substitution Principle
 
