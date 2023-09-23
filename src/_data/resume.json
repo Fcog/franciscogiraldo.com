@@ -1,5 +1,21 @@
 {
     "work_experience": [
+      {
+            "role": "Senior Backend Engineer",
+            "company": "Scribbr",
+            "company_website": "https://scribbr.com/",
+            "date_start": "June 2022",
+            "date_end": "Current",
+            "description": "Design, build and maintain the company's backend system.",
+            "tasks": [
+                "Design and develop new features.",
+                "Code Refactoring",
+                "Bug Killer"
+            ],
+            "technologies": [
+                "PHP", "OOP", "DDD", "CQRS", "Distributed apps", "Symfony", "Rest API", "MySQL", "Docker", "GIT", "PHPUnit", "AWS", "RabbitMQ", "Redis"
+            ]
+        },  
         {
             "role": "PHP backend Developer",
             "company": "Creative Fabrica",
