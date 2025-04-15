@@ -1,19 +1,41 @@
 {
     "work_experience": [
-      {
+       {
             "role": "Senior Backend Engineer",
-            "company": "Scribbr",
-            "company_website": "https://scribbr.com/",
-            "date_start": "June 2022",
+            "company": "Learneo - LanguageTool",
+            "company_website": "https://languagetool.org/",
+            "date_start": "January 2025",
             "date_end": "Current",
-            "description": "Design, build and maintain the company's backend system.",
+            "description": "Design, build and maintain the LanguageTool's website.",
             "tasks": [
-                "Design and develop new features.",
-                "Code Refactoring",
-                "Bug Killer"
+                "Develop the backend part of new features, or modifying existing ones.",
+                "Collaboration with the frontend developers to create API endpoints using Laravel.",
+                "Checking monitoring tools like Sentry and Graylog to fix issues and bugs.",
+                "Integrate 3rd party APIs like Recurly and Fastspring",
+                "Setup Amplitude experiments",
+                "Making sure the new features are working correctly in Production"
             ],
             "technologies": [
-                "PHP", "OOP", "DDD", "CQRS", "Distributed apps", "Symfony", "Rest API", "MySQL", "Docker", "GIT", "PHPUnit", "AWS", "RabbitMQ", "Redis"
+                "PHP", "OOP", "Laravel", "Rest API", "MySQL", "Docker", "GIT", "PHPUnit", "Sentry", "Graylog", "Amplitude", "GTM"
+            ]
+        },  
+      {
+            "role": "Senior Backend Engineer",
+            "company": "Learneo - Scribbr",
+            "company_website": "https://www.scribbr.com/",
+            "date_start": "June 2022",
+            "date_end": "December 2024",
+            "description": "Design, build and maintain the Scribbr's backend system.",
+            "tasks": [
+                "Design and develop the backend part of new features, or modifying existing ones.",
+                "By using scalable and performant backend solutions with the use of tools like RabbitMQ, Crons and Redis",
+                "Collaboration with the frontend developers to create API endpoints using Symfony.",
+                "Checking monitoring tools like Sentry and AWS Cloudwatch to fix issues and bugs.",
+                "Integrate 3rd party APIs like Asana, Adyen, Mailchimp, Wise, Aspose, Trustpilot, Turnitin",
+                "Making sure the new features are working correctly in Production"
+            ],
+            "technologies": [
+                "PHP", "OOP", "DDD", "CQRS", "Distributed apps", "Symfony", "Rest API", "MySQL", "Docker", "GIT", "PHPUnit", "AWS", "RabbitMQ", "Redis", "Sentry"
             ]
         },  
         {
