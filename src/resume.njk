@@ -6,7 +6,7 @@ layout: layout.njk
 <section class="cta-section theme-bg-light py-5">
     <div class="container text-center single-col-max-width">
         <h2 class="heading mb-3">Online Resume</h2>
-        <p>Latest update: September 2023</p>
+        <p>Latest update: April 2025</p>
         <button class="btn btn-primary" onclick="javascript:window.print();">
             <i class="fas fa-file-pdf mr-2"></i>Download PDF Version
         </button>
@@ -106,11 +106,11 @@ Eager to contribute to forward-thinking organizations by leveraging deep backend
                             {% if loop.index0 < 3 %}
                             <div class="item mb-4">
                                 <div class="item-heading row align-items-center mb-2">
-                                    <h4 class="item-title col-12 col-md-6 mb-2 mb-md-0">{{ work.role }}</h4>
-                                    <div class="item-meta col-12 col-md-6 text-muted text-left text-md-right">
+                                    <h4 class="item-title col-12 col-md-4 mb-2 mb-md-0">{{ work.role }}</h4>
+                                    <div class="item-meta col-12 col-md-8 text-muted text-left text-md-right">
                                         <a target="_blank" href="{{ work.company_website }}">
                                             {{ work.company }}
-                                        </a> | {{ work.date_start }} - {{ work.date_end }}
+                                        </a> | {{ work.date_start }} - {{ work.date_end }} | {{ work.location }}
                                     </div>
                                     
                                 </div>
@@ -141,65 +141,59 @@ Eager to contribute to forward-thinking organizations by leveraging deep backend
                     <section class="project-section">
 
                         <div class="row">
-                            <div class="col-sm-6">
+                            <div class="col-sm-12">
                                 <h3 class="text-uppercase resume-section-heading mb-4">Project Highlights</h3>
-                            </div>
-                            <div class="col-sm-6 text-right">
-                                <a href="https://franciscogiraldo.com/portfolio">View all</a>
                             </div>
                         </div>
 
                         <div class="item mb-3">
                             <div class="item-heading row align-items-center mb-2">
                                 <h4 class="item-title col-12 col-md-6 col-lg-8 mb-2 mb-md-0">
-                                    <a href="https://creativefabrica.com" target="_blank">
-                                    Creative Fabrica
-                                    </a>
+                                    Integrate Amplitude experiments in the LanguateTool website
                                 </h4>
                                 <div class="item-meta col-12 col-md-6 col-lg-4 text-muted text-left text-md-right">
-                                    WordPress + Laravel
+                                    PHP + JS + Amplitude SDK
                                 </div>
                             </div>
                             <div class="item-content">
-                                <p>Contributed developing features and fixing issues for this large audience e-commerce website. 
-                                    The company is scaling now by moving to a services oriented arquitecture.</p>
+                                <p>Setup the PHP and JS Amplitude SDK to be able to run backend and frontend experiments.</p>
+                                <p>An amplitude experiment is a test that compares different versions of a digital experience (like a webpage or app feature) to see which one performs better based on user behavior. Its benefits include data-driven decisions, improved user engagement, and higher conversion rates.</p>
                             </div>
                         </div><!--//item-->
 
                         <div class="item mb-3">
                             <div class="item-heading row align-items-center mb-2">
                                 <h4 class="item-title col-12 col-md-6 col-lg-8 mb-2 mb-md-0">
-                                    Milo Pet Insurance
+                                    Improve user's document deletion in the Scribbr webapp
                                 </h4>
                                 <div class="item-meta col-12 col-md-6 col-lg-4 text-muted text-left text-md-right">
-                                    NodeJS + React
+                                    PHP + AWS Lambda + AWS S3
                                 </div>
                             </div>
                             <div class="item-content">
                                 <p>
-                                    Built a NodeJS/React app where people could buy insurance plans for their pets by using an interactive multistep form connected to a Caspio backend and Stripe subscriptions.
+                                    Scribbr backend system deleted the documents uploaded by users using a cronjob. This was consuming a lot of CPU resource so this process was improved by setting an expiry date to the S3 buckets. The a AWS lambda function would be trigger on deletion and call an endpoint to Scribbr's system to further do any deletion logic.
                                 </p>
                             </div>
                         </div><!--//item-->
 
+
                         <div class="item mb-3">
                             <div class="item-heading row align-items-center mb-2">
                                 <h4 class="item-title col-12 col-md-6 col-lg-8 mb-2 mb-md-0">
-                                    <a href="https://modular-homeowners-iy3cf.ondigitalocean.app/" target="_blank">
-                                    Modular Home Owners
-                                    </a>
+                                    Create Scribbr's financial journals
                                 </h4>
                                 <div class="item-meta col-12 col-md-6 col-lg-4 text-muted text-left text-md-right">
-                                    Django
+                                    PHP + OOP design
                                 </div>
                             </div>
                             <div class="item-content">
                                 <p>
-                                    Built a complete website catalog of modular homes with a search + filters page, forum and admin dashboard.
-                                    Github: github.com/Fcog/modular-home-owners 
+                                   Created complex SQL queries to fetch the financial data. And coded a OOP design to manage the data and the financial rules in order to create the journals. The design was easy to extend as new rules or changes to the journals were added.
                                 </p>
                             </div>
                         </div><!--//item-->
+
 
                     </section><!--//project-section-->	
                 </div><!--//resume-main-->
@@ -271,8 +265,8 @@ Eager to contribute to forward-thinking organizations by leveraging deep backend
                         <ul class="list-unstyled resume-lang-list">
                             <li class="mb-1">Spanish <span class="text-muted">(Native)</span></li>
                             <li class="mb-1">English <span class="text-muted">(Advanced)</span></li>
-                            <li>French <span class="text-muted">(Intermediate)</span></li>
-                            <li>Dutch <span class="text-muted">(Beginner)</span></li>
+                            <li class="mb-1">French <span class="text-muted">(Intermediate)</span></li>
+                            <li class="mb-1">Dutch <span class="text-muted">(Intermediate)</span></li>
                         </ul>
                     </section><!--//certificates-section-->
 
@@ -280,7 +274,7 @@ Eager to contribute to forward-thinking organizations by leveraging deep backend
                     <section class="skills-section py-3">
                         <h3 class="text-uppercase resume-section-heading mb-3">Hobbies</h3>
                         <ul class="list-unstyled resume-interests-list mb-0">
-                            <li class="mb-1">Music/Guitar</li>
+                            <li class="mb-1">Playing electric guitar</li>
                             <li class="mb-1">Salsa Dancing</li>
                             <li class="mb-1">Bike Riding</li>
                             <li>Reading Fantasy Books</li>
