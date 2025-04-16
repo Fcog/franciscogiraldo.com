@@ -45,3 +45,6 @@ body.dark-mode hr {
 .resume-section-heading {
     padding-left: 0 !important;
 }
+.resume-profile-image {
+    display: none;
+}
