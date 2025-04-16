@@ -6,6 +6,7 @@
             "company_website": "https://languagetool.org/",
             "date_start": "January 2025",
             "date_end": "Current",
+            "location": "The Netherlands",
             "description": "Design, build and maintain the LanguageTool's website.",
             "tasks": [
                 "Develop the backend part of new features, or modifying existing ones.",
@@ -25,6 +26,7 @@
             "company_website": "https://www.scribbr.com/",
             "date_start": "June 2022",
             "date_end": "December 2024",
+            "location": "The Netherlands",
             "description": "Design, build and maintain the Scribbr's backend system.",
             "tasks": [
                 "Design and develop the backend part of new features, or modifying existing ones.",
@@ -44,6 +46,7 @@
             "company_website": "https://www.creativefabrica.com/",
             "date_start": "July 2021",
             "date_end": "March 2022",
+            "location": "The Netherlands",
             "description": "Fast paced startup with a global e-commerce platform with millions of users. The company is working on scaling the platform by moving the main WordPress website to microservices written with Laravel. Started initially fixing bugs and improving features of the web application. Later joined the Supply team which was in charge of the functionality to add the products to the the site.",
             "tasks": [
                 "Contributed to scale the company's existing system by leveraging functionality into microservices.",
@@ -60,6 +63,7 @@
             "company_website": "https://franciscogiraldo.com/",
             "date_start": "Jan 2021",
             "date_end": "Jun 2021",
+            "location": "Colombia",
             "description": "Worked creating a Django website using Wagtail CMS.",
             "tasks": [
                 "Development of the backend as well as the frontend."
@@ -74,6 +78,7 @@
             "company_website": "https://nolte.io",
             "date_start": "Sept 2016",
             "date_end": "Dec 2020",
+            "location": "Cali, Colombia",
             "description": "Worked remotely 4 years for this small digital agency from New York city. Learned coding using best practices like code reviews, clean code, linters and continious deployment.",
             "tasks": [
                 "Developement of more than 15 medium websites and web applications."
@@ -88,6 +93,7 @@
             "company_website": "https://www.elpais.com.co/",
             "date_start": "Mar 2014",
             "date_end": "Aug 2016",
+            "location": "Cali, Colombia",
             "description": "Worked here for a big media/newspaper company with a very large audience.",
             "tasks": [
                 "Development of multiple small websites and landing pages with WordPress and Drupal 6.",
@@ -104,6 +110,7 @@
             "company_website": "https://franciscogiraldo.com/",
             "date_start": "Apr 2014",
             "date_end": "Feb 2015",
+            "location": "Cali, Colombia",
             "description": "Worked as a freelancer for 2 clients from the USA.",
             "tasks": [
                 "Created more than 10 custom WordPress websites."
@@ -118,6 +125,7 @@
             "company_website": "https://www.inqbation.com/",
             "date_start": "Sept 2012",
             "date_end": "Apr 2013",
+            "location": "Cali, Colombia",
             "description": "First experience working in a Startup company. Clients were from the USA but I worked in the company's local office.",
             "tasks": [
                 "Assisting on the development of WordPress and Drupal websites.",
@@ -134,6 +142,7 @@
             "company_website": "https://www.brm.com.co/",
             "date_start": "Apr 2012",
             "date_end": "Sept 2012",
+            "location": "Colombia",
             "description": "Moved to Bogotá to start working for this big marketing agency to work for the Avianca team, the biggest air flights company of Colombia.",
             "tasks": [
                 "Created multiple interactive contests apps using the Facebook and Twitter API."
@@ -148,6 +157,7 @@
             "company_website": "https://www.faceit.org.co/",
             "date_start": "Apr 2011",
             "date_end": "March 2012",
+            "location": "Colombia",
             "description": "Worked for this small company as webmaster and also as web developer.",
             "tasks": [
                 "Maintained the company's main website made in Joomla.",
@@ -163,6 +173,7 @@
             "company_website": "https://www.colgatepalmolive.com.co/",
             "date_start": "Nov 2009",
             "date_end": "Dec 2010",
+            "location": "Colombia",
             "description": "Worked as an intern in the area of Customers Relationships and later was hired as a contractor.",
             "tasks": [
                 "Helped migrating the consumer feedback system from American data to Colombian data.",
@@ -184,7 +195,7 @@
             "items": [
                 "Symfony",
                 "Laravel",
-                "Django",
+                "Django"
             ]
         }
     ],
