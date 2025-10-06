@@ -12,7 +12,7 @@
     "@11ty/eleventy": "^3.1.2"
   },
   "scripts": {
-    "build": "eleventy",
+    "build": "npm install && eleventy",
     "clean": "rm -rf dist",
     "start": "eleventy --serve"
   },
