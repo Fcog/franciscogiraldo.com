@@ -42,3 +42,271 @@
     margin-top: 3rem;
     margin-bottom: 3rem;
 }
+
+/* ===============================================
+   DARK MODE STYLES
+   =============================================== */
+
+/* Dark mode styles for OS preference detection */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #1a1a1a !important;
+        color: #e0e0e0 !important;
+    }
+    
+    h1, h2, h3, h4, h5, h6 {
+        color: #ffffff !important;
+    }
+    
+    .theme-bg-light {
+        background-color: #2a2a2a !important;
+        color: #e0e0e0 !important;
+    }
+    
+    .text-muted {
+        color: #a0a0a0 !important;
+    }
+    
+    hr {
+        border-color: rgba(255, 255, 255, 0.1) !important;
+    }
+    
+    .card {
+        background-color: #2a2a2a !important;
+        border-color: #404040 !important;
+    }
+    
+    .form-control {
+        background-color: #2a2a2a !important;
+        border-color: #404040 !important;
+        color: #e0e0e0 !important;
+    }
+    
+    .form-control::placeholder {
+        color: #808080 !important;
+    }
+    
+    .btn-outline-primary {
+        border-color: #3B7EEB !important;
+        color: #3B7EEB !important;
+    }
+    
+    .btn-outline-primary:hover {
+        background-color: #3B7EEB !important;
+        color: white !important;
+    }
+    
+    .navbar-light .navbar-nav .nav-link {
+        color: #e0e0e0 !important;
+    }
+    
+    .navbar-light .navbar-nav .nav-link:hover {
+        color: #3B7EEB !important;
+    }
+    
+    .navbar-light .navbar-nav .nav-link.active {
+        color: #3B7EEB !important;
+    }
+    
+    .resume-wrapper {
+        background-color: #2a2a2a !important;
+        border-color: #404040 !important;
+    }
+    
+    .resume-section-heading {
+        color: #ffffff !important;
+    }
+    
+    .item-title {
+        color: #ffffff !important;
+    }
+    
+    .item-meta {
+        color: #a0a0a0 !important;
+    }
+    
+    .item-desc {
+        color: #e0e0e0 !important;
+    }
+    
+    .theme-link {
+        color: #3B7EEB !important;
+    }
+    
+    .theme-link:hover {
+        color: #5a9eff !important;
+    }
+    
+    .blog-post-body, .project-sections {
+        color: #e0e0e0 !important;
+    }
+    
+    .blog-post-body h1, .project-sections h1,
+    .blog-post-body h2, .project-sections h2,
+    .blog-post-body h3, .project-sections h3,
+    .blog-post-body h4, .project-sections h4,
+    .blog-post-body h5, .project-sections h5,
+    .blog-post-body h6, .project-sections h6 {
+        color: #ffffff !important;
+    }
+    
+    .blog-post-body blockquote, .project-sections blockquote {
+        border-left-color: #3B7EEB !important;
+        background-color: #2a2a2a !important;
+        color: #e0e0e0 !important;
+    }
+    
+    .blog-post-body code, .project-sections code {
+        background-color: #404040 !important;
+        color: #e0e0e0 !important;
+    }
+    
+    .blog-post-body pre, .project-sections pre {
+        background-color: #1a1a1a !important;
+        border-color: #404040 !important;
+    }
+    
+    .blog-post-body pre code, .project-sections pre code {
+        background-color: transparent !important;
+        color: #e0e0e0 !important;
+    }
+}
+
+/* Dark mode styles for manual toggle (body.dark-mode class) */
+body.dark-mode {
+    background-color: #1a1a1a !important;
+    color: #e0e0e0 !important;
+}
+
+body.dark-mode h1, 
+body.dark-mode h2, 
+body.dark-mode h3, 
+body.dark-mode h4, 
+body.dark-mode h5, 
+body.dark-mode h6 {
+    color: #ffffff !important;
+}
+
+body.dark-mode .theme-bg-light {
+    background-color: #2a2a2a !important;
+    color: #e0e0e0 !important;
+}
+
+body.dark-mode .text-muted {
+    color: #a0a0a0 !important;
+}
+
+body.dark-mode hr {
+    border-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+body.dark-mode .card {
+    background-color: #2a2a2a !important;
+    border-color: #404040 !important;
+}
+
+body.dark-mode .form-control {
+    background-color: #2a2a2a !important;
+    border-color: #404040 !important;
+    color: #e0e0e0 !important;
+}
+
+body.dark-mode .form-control::placeholder {
+    color: #808080 !important;
+}
+
+body.dark-mode .btn-outline-primary {
+    border-color: #3B7EEB !important;
+    color: #3B7EEB !important;
+}
+
+body.dark-mode .btn-outline-primary:hover {
+    background-color: #3B7EEB !important;
+    color: white !important;
+}
+
+body.dark-mode .navbar-light .navbar-nav .nav-link {
+    color: #e0e0e0 !important;
+}
+
+body.dark-mode .navbar-light .navbar-nav .nav-link:hover {
+    color: #3B7EEB !important;
+}
+
+body.dark-mode .navbar-light .navbar-nav .nav-link.active {
+    color: #3B7EEB !important;
+}
+
+body.dark-mode .resume-wrapper {
+    background-color: #2a2a2a !important;
+    border-color: #404040 !important;
+}
+
+body.dark-mode .resume-section-heading {
+    color: #ffffff !important;
+}
+
+body.dark-mode .item-title {
+    color: #ffffff !important;
+}
+
+body.dark-mode .item-meta {
+    color: #a0a0a0 !important;
+}
+
+body.dark-mode .item-desc {
+    color: #e0e0e0 !important;
+}
+
+body.dark-mode .theme-link {
+    color: #3B7EEB !important;
+}
+
+body.dark-mode .theme-link:hover {
+    color: #5a9eff !important;
+}
+
+body.dark-mode .blog-post-body, 
+body.dark-mode .project-sections {
+    color: #e0e0e0 !important;
+}
+
+body.dark-mode .blog-post-body h1, 
+body.dark-mode .project-sections h1,
+body.dark-mode .blog-post-body h2, 
+body.dark-mode .project-sections h2,
+body.dark-mode .blog-post-body h3, 
+body.dark-mode .project-sections h3,
+body.dark-mode .blog-post-body h4, 
+body.dark-mode .project-sections h4,
+body.dark-mode .blog-post-body h5, 
+body.dark-mode .project-sections h5,
+body.dark-mode .blog-post-body h6, 
+body.dark-mode .project-sections h6 {
+    color: #ffffff !important;
+}
+
+body.dark-mode .blog-post-body blockquote, 
+body.dark-mode .project-sections blockquote {
+    border-left-color: #3B7EEB !important;
+    background-color: #2a2a2a !important;
+    color: #e0e0e0 !important;
+}
+
+body.dark-mode .blog-post-body code, 
+body.dark-mode .project-sections code {
+    background-color: #404040 !important;
+    color: #e0e0e0 !important;
+}
+
+body.dark-mode .blog-post-body pre, 
+body.dark-mode .project-sections pre {
+    background-color: #1a1a1a !important;
+    border-color: #404040 !important;
+}
+
+body.dark-mode .blog-post-body pre code, 
+body.dark-mode .project-sections pre code {
+    background-color: transparent !important;
+    color: #e0e0e0 !important;
+}
