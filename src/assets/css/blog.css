@@ -81,3 +81,27 @@
     opacity: 1;
   }
 }
+
+.blog-post-body table {
+  width: 100%;
+  margin: 1.25rem 0 1.5rem;
+  border-collapse: collapse;
+}
+
+.blog-post-body th,
+.blog-post-body td {
+  padding: 0.55rem 0.75rem;
+  text-align: left;
+  vertical-align: top;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.blog-post-body th {
+  font-weight: 700;
+  border-bottom-width: 2px;
+}
+
+body.dark-mode .blog-post-body th,
+body.dark-mode .blog-post-body td {
+  border-bottom-color: rgba(255, 255, 255, 0.16);
+}
