@@ -1,9 +1,7 @@
 ---
 title: Blog
 layout: layout.njk
-pagination:
-  data: collections.post
-  size: 4
+js: ["plugins/imagesloaded.pkgd.min.js", "plugins/isotope.pkgd.min.js", "js/isotope-custom.js"]
 ---
 
 <section class="cta-section theme-bg-light py-5">
@@ -15,11 +13,19 @@ pagination:
 
 <section class="blog-list px-3 py-5 p-md-5">
     <div class="container">
+        <div class="text-center">
+            <ul id="filters" class="filters mb-5 mx-auto pl-0">
+                <li class="type active mb-3 mb-lg-0" data-filter="*">All</li>
+                {% for tag in collections.postTags %}
+                <li class="type mb-3 mb-lg-0" data-filter=".{{ tag.slug }}">{{ tag.name }}</li>
+                {% endfor %}
+            </ul><!--//filters-->
+        </div>
 
-        <div class="row">
+        <div class="row isotope">
 
             {% for post in collections.posts | reverse %}
-                <div class="col-md-4 mb-3">
+                <div class="isotope-item col-md-4 mb-3 {{ post.data.post_tags | tagClasses }}">
                     <div class="card blog-post-card">
                         <div class="card-body">
                             <h5 class="card-title"><a class="theme-link" href="{{ post.url }}">{{ post.data.title }}</a></h5>
@@ -39,19 +45,6 @@ pagination:
             {% endfor %}  
 
         </div><!--//row-->
-        
-        
-        <nav class="blog-nav nav nav-justified my-5">
-        
-            {% if pagination.pageNumber - 1 >= 0 %}
-            <a class="nav-link-prev nav-item nav-link d-none rounded-left" href="/blog/{{ pagination.pageNumber - 1 }}">Previous<i class="arrow-prev fas fa-long-arrow-alt-left"></i></a>
-            {% endif %}
-
-            {% if pagination.pageNumber + 1 > 1 %}
-            <a class="nav-link-next nav-item nav-link rounded" href="/blog/{{ pagination.pageNumber + 1 }}">Next<i class="arrow-next fas fa-long-arrow-alt-right"></i></a>
-            {% endif %}
-
-        </nav>
         
     </div>
 </section>

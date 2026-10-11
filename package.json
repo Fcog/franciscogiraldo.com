@@ -14,7 +14,8 @@
   "scripts": {
     "build": "npm install && eleventy",
     "clean": "rm -rf dist",
-    "start": "eleventy --serve"
+    "watch": "eleventy --watch",
+    "start": "eleventy --serve --watch"
   },
   "author": "Francisco Giraldo",
   "license": "ISC"
