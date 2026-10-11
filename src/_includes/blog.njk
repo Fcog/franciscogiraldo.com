@@ -1,7 +1,7 @@
 ---
 layout: layout.njk
 js: ["plugins/jquery-3.4.1.min.js", "plugins/highlight/highlight.pack.js", "js/blog.js",]  
-css: ["plugins/highlight/styles/monokai-sublime.css"]  
+css: ["plugins/highlight/styles/monokai-sublime.css", "css/blog.css"]  
 ---
 
 <article class="blog-post px-3 py-5 p-md-5">
@@ -9,7 +9,7 @@ css: ["plugins/highlight/styles/monokai-sublime.css"]
         <header class="blog-post-header">
             <h2 class="title mb-2">{{ title }}</h2>
             <div class="meta mb-3">
-                <span class="date">Published {{ date_published }}</span>
+                <span class="date">Published {{ page.date.toUTCString() }}</span>
                 <span class="time">{{ mins }} min read</span>
                 <span class="comment"><a href="https://franciscogiraldo.com{{ page.url }}#disqus_thread"></a></span>
                 </div>
