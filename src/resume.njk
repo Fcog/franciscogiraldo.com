@@ -46,7 +46,7 @@ layout: layout.njk
 
         <hr>
 
-        <div class="resume-intro py-3">
+        <div class="py-3 resume-intro">
 
             <div class="media flex-column flex-md-row align-items-center mb-3">
                 <img class="resume-profile-image mb-3 mb-md-0 mr-md-5 ml-md-0 rounded mx-auto" src="/assets/images/Francisco Giraldo.jpg" alt="Profile image">
@@ -125,8 +125,7 @@ Senior Backend Engineer with 5+ years building and running services for high-tra
                                         {% endfor %}
                                     </ul>
                                     <div class="d-inline-flex">
-                                        <p>Techonologies: </p>
-                                        <ul class="list-inline">
+                                         <ul class="list-inline">
                                             {% for tech in work.technologies %}
                                                 <li class="badge">{{ tech }}</li>
                                             {% endfor %}

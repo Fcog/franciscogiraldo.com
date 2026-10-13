@@ -30,6 +30,14 @@ body.dark-mode hr {
     padding: 0 !important;
 }
 
+.py-3 {
+    padding-bottom: 0.8rem !important;
+}
+
+.resume-intro {
+    padding-bottom: 0 !important;
+}
+
 .resume-main,
 .resume-title {
     flex: none !important;
@@ -47,4 +55,31 @@ body.dark-mode hr {
 }
 .resume-profile-image {
     display: none;
+}
+.badge {
+    border: none;
+}
+
+.resume-main .item-content {
+    font-size: 0.8rem;
+}
+
+.pb-3 {
+    padding-bottom: 0.9rem !important;
+}
+
+ul {
+    margin-bottom: 0.7rem !important;
+}
+
+.mb-4 {
+    margin-bottom: 1rem !important;
+}
+
+hr {
+    margin: 0.5rem auto !important;
+}
+
+.resume-social-list {
+    display: none !important;
 }
