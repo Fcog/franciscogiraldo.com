@@ -152,51 +152,30 @@ Senior Backend Engineer with 5+ years building and running services for high-tra
                         <div class="item mb-3">
                             <div class="item-heading row align-items-center mb-2">
                                 <h4 class="item-title col-12 col-md-6 col-lg-8 mb-2 mb-md-0">
-                                    Integrate Amplitude experiments in the LanguateTool website
+                                    User-Data Compliance Service (QuillBot)
                                 </h4>
                                 <div class="item-meta col-12 col-md-6 col-lg-4 text-muted text-left text-md-right">
-                                    PHP + JS + Amplitude SDK
+                                    NestJS, PostgreSQL, RabbitMQ, GCP
                                 </div>
                             </div>
                             <div class="item-content">
-                                <p>Setup the PHP and JS Amplitude SDK to be able to run backend and frontend experiments.</p>
-                                <p>An amplitude experiment is a test that compares different versions of a digital experience (like a webpage or app feature) to see which one performs better based on user behavior. Its benefits include data-driven decisions, improved user engagement, and higher conversion rates.</p>
+                        Designed and built an event-driven service that lets support and legal teams delete, disable, reinstate and export user data across all QuillBot products. It handles GDPR/CCPA requests and DMCA takedowns, tracks every job’s progress and logs who did what for audits.
                             </div>
                         </div><!--//item-->
 
                         <div class="item mb-3">
                             <div class="item-heading row align-items-center mb-2">
                                 <h4 class="item-title col-12 col-md-6 col-lg-8 mb-2 mb-md-0">
-                                    Improve user's document deletion in the Scribbr webapp
+                                    Content Moderation Service (QuillBot)
                                 </h4>
                                 <div class="item-meta col-12 col-md-6 col-lg-4 text-muted text-left text-md-right">
-                                    PHP + AWS Lambda + AWS S3
+                                    NestJS, PostgreSQL, OpenAI Moderation API, GCP
                                 </div>
                             </div>
                             <div class="item-content">
-                                <p>
-                                    Scribbr backend system deleted the documents uploaded by users using a cronjob. This was consuming a lot of CPU resource so this process was improved by setting an expiry date to the S3 buckets. The a AWS lambda function would be trigger on deletion and call an endpoint to Scribbr's system to further do any deletion logic.
-                                </p>
+                            Designed and built a central service that screens user-written text, uploaded images and AI-generated images for harmful content across QuillBot products. It passes content to the OpenAI moderation API, maps the results to QuillBot’s own content categories and keeps a record of flagged content for review and policy tuning.
                             </div>
                         </div><!--//item-->
-
-
-                        <div class="item mb-3">
-                            <div class="item-heading row align-items-center mb-2">
-                                <h4 class="item-title col-12 col-md-6 col-lg-8 mb-2 mb-md-0">
-                                    Create Scribbr's financial journals
-                                </h4>
-                                <div class="item-meta col-12 col-md-6 col-lg-4 text-muted text-left text-md-right">
-                                    PHP + OOP design
-                                </div>
-                            </div>
-                            <div class="item-content">
-                                <p>
-                                   Created complex SQL queries to fetch the financial data. And coded a OOP design to manage the data and the financial rules in order to create the journals. The design was easy to extend as new rules or changes to the journals were added.
-                                </p>
-                            </div>
-                        </div><!--//item-->
-
 
                     </section><!--//project-section-->	
                 </div><!--//resume-main-->
