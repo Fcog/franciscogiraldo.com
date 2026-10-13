@@ -14,15 +14,15 @@ A high-traffic web backend fails when the app, the servers, and the deploy proce
 
 Each tool has one job:
 
-| Tool                     | Job                                                                                      |
-| ------------------------ | ---------------------------------------------------------------------------------------- |
-| GitHub Actions           | CI runner: test, build the image, publish the tag                                        |
-| Docker                   | Build the artifact that every replica runs                                               |
-| Kubernetes               | Run many copies and send cluster traffic to the healthy ones                             |
-| NGINX Ingress Controller | Public HTTP entry: host, path, and TLS                                                   |
-| Helm                     | One package of Kubernetes manifests; staging and production differ only by a values file |
-| HashiCorp Vault          | Hold secrets and hand them to pods                                                       |
-| Argo CD                  | Make the cluster match what Git says, and keep it there                                  |
+| Tool                                                        | Job                                                                                      |
+| ----------------------------------------------------------- | ---------------------------------------------------------------------------------------- |
+| [GitHub Actions](/blog/github-actions/)                     | CI runner: test, build the image, publish the tag                                        |
+| [Docker](/blog/docker/)                                     | Build the artifact that every replica runs                                               |
+| [Kubernetes](/blog/kubernetes/)                             | Run many copies and send cluster traffic to the healthy ones                             |
+| [NGINX Ingress Controller](/blog/nginx-ingress-controller/) | Public HTTP entry: host, path, and TLS                                                   |
+| [Helm](/blog/helm/)                                         | One package of Kubernetes manifests; staging and production differ only by a values file |
+| [HashiCorp Vault](/blog/hashicorp-vault/)                   | Hold secrets and hand them to pods                                                       |
+| [Argo CD](/blog/argo-cd/)                                   | Make the cluster match what Git says, and keep it there                                  |
 
 The application code stays yours. These tools do not replace the application, the database, or the queue. They are how that application is packaged, configured, released, and reached. The same platform is the runtime for an MLOps engineering stack: training jobs, a versioned model, and an inference service that has to stay up under load.
 
@@ -65,7 +65,7 @@ The database is not a Deployment you scale the same way. App pods scale out. Sta
 
 ## NGINX Ingress Controller: the public door
 
-The Ingress API describes a route: this host and path go to that Service. The NGINX Ingress Controller is the process that implements the route. It watches Ingress objects, loads them into NGINX, terminates TLS, and proxies to the Service. Clients keep using one hostname. Pods can be replaced behind it.
+The Ingress API describes a route: this host and path go to that Service. The NGINX Ingress Controller is the process that implements the route. It watches Ingress objects, loads them into NGINX, terminates TLS, and proxies to the Service. Clients keep using one hostname. Pods can be replaced behind it. The community Ingress NGINX project was retired in March 2026. The [NGINX Ingress Controller](/blog/nginx-ingress-controller/) page covers that status.
 
 Public traffic comes in here. Service-to-service traffic does not. An inference pod calling a feature service uses the cluster DNS name. Sending that hop back out through NGINX adds latency and puts internal calls on the public edge.
 
