@@ -17,7 +17,11 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="DevCard Bootstrap 4 Template">
+	{% if description %}
+	<meta name="description" content="{{ description }}">
+	{% else %}
+	<meta name="description" content="Francisco Giraldo - Backend Engineer">
+	{% endif %}
 	<meta name="author" content="Xiaoying Riley at 3rd Wave Media">    
 	
 	<!-- Google Fonts -->
@@ -41,8 +45,8 @@
 	<meta property="og:description" content="{{description}}">
 	<meta name="twitter:description" content="{{description}}">
 	{% else %}	
-	<meta property="og:description" content="Francisco Giraldo - Web App Engineer">
-	<meta name="twitter:description" content="Francisco Giraldo - Web App Engineer">
+	<meta property="og:description" content="Francisco Giraldo - Backend Engineer">
+	<meta name="twitter:description" content="Francisco Giraldo - Backend Engineer">
 	{% endif %}	
 
 	{% if image_small %}
@@ -90,7 +94,7 @@
 							<img class="profile-image mb-3 rounded-circle mx-auto" src="/assets/images/Francisco Giraldo.jpg" alt="Portrait image of Francisco Giraldo" >		
 						</video>	
 						
-						<div class="bio mb-3"><b>Hi!</b> my name is Francisco Giraldo. <br>I'm a Web Developer from Colombia and currently living in The Netherlands!</div><!--//bio-->
+						<div class="bio mb-3"><b>Hi!</b> my name is Francisco Giraldo. <br>I'm a Backend Engineer from Colombia and currently living in The Netherlands!</div><!--//bio-->
 						<ul class="social-list list-inline py-2 mx-auto">
 							<li class="list-inline-item"><a target="_blank" href="https://www.linkedin.com/in/franciscogiraldo"><i class="fab fa-linkedin-in fa-fw"></i></a></li>
 							<li class="list-inline-item"><a target="_blank" href="https://github.com/Fcog"><i class="fab fa-github-alt fa-fw"></i></a></li>
@@ -104,9 +108,6 @@
 					<ul class="navbar-nav flex-column text-left">
 						<li class="nav-item {% if '' == page.url %}active{% endif %}">
 							<a class="nav-link" href="/"><i class="fas fa-user fa-fw mr-2"></i>About Me<span class="sr-only">(current)</span></a>
-						</li>
-						<li class="nav-item {% if '/portfolio' in page.url %}active{% endif %}">
-							<a class="nav-link" href="/portfolio"><i class="fas fa-laptop-code fa-fw mr-2"></i>Portfolio</a>
 						</li>
 						<!-- 
 						<li class="nav-item {% if '/services' in page.url %}active{% endif %}">
