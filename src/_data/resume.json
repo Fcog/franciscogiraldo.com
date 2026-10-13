@@ -1,20 +1,35 @@
 {
     "work_experience": [
+        {
+            "role": "Senior Backend Engineer",
+            "company": "Learneo - Quillbot",
+            "company_website": "https://languagetool.org/",
+            "date_start": "January 2026",
+            "date_end": "Current",
+            "location": "The Netherlands",
+            "description": "Designed and engineered a production-grade, highly available microservices ecosystem deploying containerized TypeScript/Node.js applications via a local Kubernetes and Helm infrastructure stack. Set up CI/CD in GitLab.",
+            "tasks": [
+                "Design, setup and development of the Moderation service.",
+                "Design, setup and development of the Compliance service.",
+                "Worked on adding HTTP headers to indicate internal services about the user's auth status.",
+                "Setup of CI/CD for the 2 above mentioned services"
+            ],
+            "technologies": [
+                "Javascript", "Typescript", "NestJS", "Rest API", "Postgres", "Docker", "GIT", "Tests", "Kubernetes", "Helm", "ArgoCD", "Google Cloud Provider"
+            ]
+        },          
        {
             "role": "Senior Backend Engineer",
             "company": "Learneo - LanguageTool",
             "company_website": "https://languagetool.org/",
             "date_start": "January 2025",
-            "date_end": "Current",
+            "date_end": "December 2025",
             "location": "The Netherlands",
-            "description": "Design, build and maintain the LanguageTool's website.",
+            "description": "Design, build and maintain LanguageTool's website.",
             "tasks": [
-                "Develop the backend part of new features, or modifying existing ones.",
-                "Collaboration with the frontend developers to create API endpoints using Laravel.",
-                "Checking monitoring tools like Sentry and Graylog to fix issues and bugs.",
-                "Integrate 3rd party APIs like Recurly and Fastspring",
-                "Setup Amplitude experiments",
-                "Making sure the new features are working correctly in Production"
+                "Setup of A/B tests with Amplitude to incorporate different AI models",
+                "Development of a feature to allow users to select the in-house AI model or an external one.",
+                "Setup of the Brazilian currency in the payments system"
             ],
             "technologies": [
                 "PHP", "OOP", "Laravel", "Rest API", "MySQL", "Docker", "GIT", "PHPUnit", "Sentry", "Graylog", "Amplitude", "GTM"
@@ -29,12 +44,10 @@
             "location": "The Netherlands",
             "description": "Design, build and maintain the Scribbr's backend system.",
             "tasks": [
-                "Design and develop the backend part of new features, or modifying existing ones.",
-                "By using scalable and performant backend solutions with the use of tools like RabbitMQ, Crons and Redis",
-                "Collaboration with the frontend developers to create API endpoints using Symfony.",
-                "Checking monitoring tools like Sentry and AWS Cloudwatch to fix issues and bugs.",
-                "Integrate 3rd party APIs like Asana, Adyen, Mailchimp, Wise, Aspose, Trustpilot, Turnitin",
-                "Making sure the new features are working correctly in Production"
+                "Design and development of the AI Proofreading service integration in the webapp.",
+                "Design and development of the finance journals",
+                "Setup of several automated transactional emails with Mailchimp",
+                "Development of compliance feature to delete user data in all systems."
             ],
             "technologies": [
                 "PHP", "OOP", "DDD", "CQRS", "Distributed apps", "Symfony", "Rest API", "MySQL", "Docker", "GIT", "PHPUnit", "AWS", "RabbitMQ", "Redis", "Sentry"
@@ -185,24 +198,23 @@
         {
             "title": "Programming Languages",
             "items": [
+                "Javascript",
                 "PHP",
-                "Python",
-                "Javascript"
+                "Python"
             ]
         },
         {
             "title": "Frameworks",
             "items": [
+                "NestJS",
                 "Symfony",
-                "Laravel",
-                "Django"
+                "Laravel"
             ]
         }
     ],
     "soft_skills": [
         "Problem Solving",
         "Ownership of tasks",
-        "Good written and verbal communication",
         "Motivated",
         "Teamwork",
         "Ethical",
