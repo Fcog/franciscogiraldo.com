@@ -9,7 +9,7 @@ css: ["plugins/highlight/styles/monokai-sublime.css", "css/blog.css"]
         <header class="blog-post-header">
             <h2 class="title mb-2">{{ title }}</h2>
             <div class="meta mb-3">
-                <span class="date">Published {{ page.date.toUTCString() }}</span>
+                <span class="date">Published {{ page.date.toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric", timeZone: "UTC" }) }}</span>
                 <span class="time">{{ mins }} min read</span>
                 <span class="comment"><a href="https://franciscogiraldo.com{{ page.url }}#disqus_thread"></a></span>
                 </div>

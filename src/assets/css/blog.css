@@ -105,3 +105,44 @@ body.dark-mode .blog-post-body th,
 body.dark-mode .blog-post-body td {
   border-bottom-color: rgba(255, 255, 255, 0.16);
 }
+
+.blog-post-body pre:has(code.language-text) {
+  background: #ececec;
+  border-radius: 4px;
+}
+
+.blog-post-body pre code.language-text,
+.blog-post-body pre code.language-text.hljs {
+  background: #ececec;
+  color: #292929;
+}
+
+.blog-post-body pre:has(code.language-text) .code-line:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.blog-post-body pre:has(code.language-text) .code-copy-btn {
+  color: #292929;
+  background: rgba(0, 0, 0, 0.06);
+  border-color: rgba(0, 0, 0, 0.16);
+}
+
+body.dark-mode .blog-post-body pre:has(code.language-text) {
+  background: #3a3a3a !important;
+}
+
+body.dark-mode .blog-post-body pre code.language-text,
+body.dark-mode .blog-post-body pre code.language-text.hljs {
+  background: #3a3a3a !important;
+  color: #e0e0e0 !important;
+}
+
+body.dark-mode .blog-post-body pre:has(code.language-text) .code-line:hover {
+  background: rgba(255, 255, 255, 0.06);
+}
+
+body.dark-mode .blog-post-body pre:has(code.language-text) .code-copy-btn {
+  color: #e0e0e0;
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(255, 255, 255, 0.2);
+}
