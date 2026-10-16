@@ -6,7 +6,7 @@ title: "From Duplicate YAMLs to a Unified Stack: Managing Dev and Prod Environme
 image:
 date: 2026-10-11
 mins: 10
-excerpt: Copy-pasting duplicate Kubernetes manifests between dev and prod is a production liability. Learn how to leverage Helm to cleanly decouple application structure from environmental configurations, keep your Git state dry, and achieve one-command atomic rollbacks.
+excerpt: Use one Helm chart for dev and prod, and keep the differences in values files.
 post_tags: ["Arquitecture", "Docker", "Kubernetes", "Helm", "DevOps"]
 ---
 
