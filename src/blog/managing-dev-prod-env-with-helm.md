@@ -2,7 +2,7 @@
 layout: blog.njk
 post_id: 27
 tags: post
-title: "From Duplicate YAMLs to a Unified Stack: Managing Dev and Prod Environments with Helm"
+title: "Managing Multiple Environments with Helm"
 image:
 date: 2026-10-11
 mins: 10
@@ -10,17 +10,16 @@ excerpt: Use one Helm chart for dev and prod, and keep the differences in values
 post_tags: ["Arquitecture", "Docker", "Kubernetes", "Helm", "DevOps"]
 ---
 
-As a backend engineer working more with Kubernetes, you soon find that each new environment means another copy of the same YAML.
+As a backend engineer working more with Kubernetes, you soon find that each new environment—whether it is staging, QA, canary, or a dynamic PR preview—tempts you to make another copy of the same YAML.
+When you start out with Kubernetes, the pattern is usually innocent: you write a deployment.yaml, a service.yaml, and perhaps an hpa.yaml for your local application testing. But the moment your organization grows to support multiple distinct targets, reality hits.
 
-When you start out with Kubernetes, the pattern is usually innocent: you write a `deployment.yaml`, a `service.yaml`, and perhaps an `hpa.yaml` for your local application testing. But the moment you need to push that application to a production cluster, reality hits.
+Production runs five copies of the application instead of one. Each copy gets a whole CPU instead of a small fraction. Staging or QA might need different replica counts, memory limits, or persistent mock endpoints.
 
-Production runs five copies of the application instead of one. Each copy gets a whole CPU instead of a small fraction of one. The cluster always pulls a fresh image, and that image is a fixed release tag, not a tag that still changes on your machine.
+The naive approach? Copy the entire directory for each target, modify the settings manually, and run kubectl apply.
 
-The naive approach? Copy the entire directory, name it `/infra-prod`, modify the settings manually, and run `kubectl apply`.
+This is a major anti-pattern. You now have fragmented infrastructure states. If you add a health check probe or modify a container port tomorrow, you have to remember to edit it across every separate copy. One missed file, and your staging validation fails or your production deployment drifts.
 
-This is a major anti-pattern. You now have **duplicated infrastructure states**. If you add a health check probe or modify a container port tomorrow, you have to remember to edit it in two entirely separate files. One typo, and your production cluster crashes while your development environment passes smoothly.
-
-Enter **Helm**, the package manager for Kubernetes. Here is how we transform static, risky duplicate manifests into a singular, parameterized infrastructure package.
+Enter [Helm](https://helm.sh), the package manager for [Kubernetes](https://kubernetes.io/docs/concepts/overview/). Here is how we transform static, risky duplicate manifests into a single, parameterized infrastructure package that scales across any number of environments.
 
 ---
 
@@ -28,7 +27,9 @@ Enter **Helm**, the package manager for Kubernetes. Here is how we transform sta
 
 Helm handles infrastructure the exact same way backend developers handle code: by decoupling the **logic** from the **configuration variables**.
 
-Instead of duplicating your structural manifests, your layout folder stays completely static inside a template directory. You replace hardcoded values with dynamic placeholders (`{% raw %}{{ .Values.variableName }}{% endraw %}`). Then, you feed those placeholders using environmental override profiles: **`values-dev.yaml`** and **`values-prod.yaml`**.
+Instead of duplicating your structural manifests, your layout folder stays completely static inside a template directory. You replace hardcoded values with dynamic placeholders (`{{ .Values.variableName }}`).
+
+Then, you feed those placeholders using environmental override profiles: **`values-dev.yaml`** and **`values-prod.yaml`**.
 
 ```text
                ┌──► values-dev.yaml  ───► (Minimal footprint, 1 pod)
@@ -47,8 +48,6 @@ Let's look at how this is structured in a production-ready repository. We will p
 ### 1. The Global Structural Template
 
 Inside your Helm chart directory (e.g., `services/ai-inference/chart/templates/deployment.yaml`), your architecture layout uses placeholder injection tags:
-
-{% raw %}
 
 ```yaml
 apiVersion: apps/v1
@@ -75,8 +74,6 @@ spec:
           limits:
             cpu: "{{ .Values.resources.limits.cpu }}"
 ```
-
-{% endraw %}
 
 ### 2. The Development Profile (`values-dev.yaml`)
 
@@ -152,4 +149,4 @@ helm rollback my-ai-prod 1
 
 ### Conclusion
 
-Decoupling structure from configuration variables is the dividing line between basic software orchestration and mature, production-ready platform engineering. By standardizing your deployments using dynamic Helm profiles, your infrastructure setup remains clean, cost-optimized, and immune to human copy-paste errors.
+Scaling across multiple environments doesn't mean multiplying YAML files. By treating your infrastructure chart as a parameterized function and your environment files as arguments, your deployment pipeline remains dry, auditable, and production-resilient.

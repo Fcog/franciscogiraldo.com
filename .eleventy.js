@@ -100,6 +100,7 @@ module.exports = (config) => {
     });
 
     return {
+        markdownTemplateEngine: false,
         dir: {
             input: "src",
             output: "dist",

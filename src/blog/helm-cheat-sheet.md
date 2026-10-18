@@ -182,7 +182,6 @@ my-chart/
   .helmignore
 ```
 
-{% raw %}
 ```bash
 # Common template helpers
 {{ .Release.Name }}
@@ -193,7 +192,6 @@ my-chart/
 {{ include "my-chart.fullname" . }}
 {{ toYaml .Values.resources | nindent 2 }}
 ```
-{% endraw %}
 
 ## Common Debugging Flow
 
