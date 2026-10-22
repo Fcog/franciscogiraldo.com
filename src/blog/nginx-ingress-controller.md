@@ -7,7 +7,7 @@ image:
 date: 2026-10-11
 mins: 6
 excerpt: What the NGINX Ingress Controller is, what developers use it for, and the routing features on the public edge of a cluster.
-post_tags: ["NGINX", "Kubernetes", "DevOps"]
+post_tags: ["NGINX", "Kubernetes"]
 ---
 
 The NGINX Ingress Controller is the process that turns Kubernetes Ingress objects into a running NGINX configuration. Clients use one hostname. NGINX terminates TLS and proxies to a Service. In the [backend architecture for high-traffic web apps](/blog/high-traffic-backend-architecture/), it is the public door: host, path, and TLS.

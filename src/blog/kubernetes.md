@@ -7,7 +7,7 @@ image:
 date: 2026-10-11
 mins: 6
 excerpt: What Kubernetes is, what developers use it for, and the workload features that keep a service up under load.
-post_tags: ["Kubernetes", "DevOps"]
+post_tags: ["Kubernetes"]
 ---
 
 Kubernetes runs containers across a group of machines and keeps them at the state you declared. In the [backend architecture for high-traffic web apps](/blog/high-traffic-backend-architecture/), it is the runtime: many copies of a [Docker](/blog/docker/) image, and cluster traffic sent only to the healthy ones.

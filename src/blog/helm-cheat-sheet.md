@@ -3,11 +3,11 @@ layout: blog.njk
 post_id: 15
 tags: post
 title: Helm Cheat Sheet
-image: 
+image:
 date: 2026-10-11
 mins: 8
 excerpt: Handy reference for everyday Helm commands — install, upgrade, rollback, repos, values, and debugging.
-post_tags: ['Kubernetes', 'Helm', 'DevOps']
+post_tags: ["Helm"]
 ---
 
 Quick reference for everyday Helm commands.
@@ -111,15 +111,15 @@ helm uninstall my-app --no-hooks
 
 ## Values Overrides
 
-| Flag | Use |
-|------|-----|
-| `-f values.yaml` | Load values from file (can repeat) |
-| `--set key=value` | Override a single value |
-| `--set key=a\,b` | List values |
-| `--set-string key=001` | Force string type |
-| `--set-file key=./file` | Set value from file contents |
-| `--reuse-values` | Keep previous release values |
-| `--reset-values` | Reset to chart defaults |
+| Flag                    | Use                                |
+| ----------------------- | ---------------------------------- |
+| `-f values.yaml`        | Load values from file (can repeat) |
+| `--set key=value`       | Override a single value            |
+| `--set key=a\,b`        | List values                        |
+| `--set-string key=001`  | Force string type                  |
+| `--set-file key=./file` | Set value from file contents       |
+| `--reuse-values`        | Keep previous release values       |
+| `--reset-values`        | Reset to chart defaults            |
 
 ```bash
 # Multiple files: later files win

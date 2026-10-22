@@ -7,7 +7,7 @@ image:
 date: 2026-10-11
 mins: 6
 excerpt: What Helm is, what developers use it for, and how a chart both packages your app and installs other technologies.
-post_tags: ["Helm", "Kubernetes", "DevOps"]
+post_tags: ["Helm"]
 ---
 
 Helm packages Kubernetes manifests and installs them as a named release. You use it for your own application, and you use the same command to install other technologies that publish a chart. In the [backend architecture for high-traffic web apps](/blog/high-traffic-backend-architecture/), staging and production of your application differ by a values file. The chart stays shared.

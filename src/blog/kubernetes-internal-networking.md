@@ -3,11 +3,11 @@ layout: blog.njk
 post_id: 19
 tags: post
 title: "Kubernetes Internal Networking: How to Find and Verify Microservice Cluster Addresses"
-image: 
+image:
 date: 2026-10-11
 mins: 6
 excerpt: How to find a microservice ClusterIP and FQDN, then verify DNS and endpoints from inside the cluster.
-post_tags: ['Kubernetes', 'DevOps']
+post_tags: ["Kubernetes"]
 ---
 
 When you move from a monolithic backend to Kubernetes microservices, one of the first shifts is internal cluster communication.

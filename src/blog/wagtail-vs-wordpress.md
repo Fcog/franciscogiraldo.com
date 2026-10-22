@@ -9,6 +9,7 @@ date: 2021-03-15
 mins: 5
 excerpt: Let's compare some examples of the same features created with both of this Content Management Systems.
 status: draft
+post_tags: ["WordPress", "Python"]
 ---
 
 # Adding a custom column to the admin model page.

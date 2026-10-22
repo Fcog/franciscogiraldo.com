@@ -3,11 +3,11 @@ layout: blog.njk
 post_id: 14
 tags: post
 title: kubectl Cheat Sheet
-image: 
+image:
 date: 2026-10-11
 mins: 8
 excerpt: Handy reference for everyday kubectl commands — pods, deployments, services, logs, and debugging.
-post_tags: ['Kubernetes', 'DevOps']
+post_tags: ["Kubernetes"]
 ---
 
 Quick reference for everyday `kubectl` commands.
@@ -92,11 +92,11 @@ kubectl port-forward svc/<name> 8080:80
 kubectl delete svc <name>
 ```
 
-| Type | Use case |
-|------|----------|
-| `ClusterIP` | Internal only (default) |
-| `NodePort` | Expose on each node |
-| `LoadBalancer` | Cloud load balancer |
+| Type           | Use case                   |
+| -------------- | -------------------------- |
+| `ClusterIP`    | Internal only (default)    |
+| `NodePort`     | Expose on each node        |
+| `LoadBalancer` | Cloud load balancer        |
 | `ExternalName` | DNS alias to external host |
 
 ## Logs & Debugging
@@ -188,17 +188,17 @@ kubectl get pods --show-labels
 
 ## Shorthand Resource Names
 
-| Short | Full |
-|-------|------|
-| `po` | pods |
-| `deploy` | deployments |
-| `svc` | services |
-| `ns` | namespaces |
-| `cm` | configmaps |
-| `ing` | ingresses |
-| `rs` | replicasets |
-| `sts` | statefulsets |
-| `ds` | daemonsets |
+| Short        | Full                       |
+| ------------ | -------------------------- |
+| `po`         | pods                       |
+| `deploy`     | deployments                |
+| `svc`        | services                   |
+| `ns`         | namespaces                 |
+| `cm`         | configmaps                 |
+| `ing`        | ingresses                  |
+| `rs`         | replicasets                |
+| `sts`        | statefulsets               |
+| `ds`         | daemonsets                 |
 | `pv` / `pvc` | persistentvolumes / claims |
 
 ```bash

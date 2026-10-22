@@ -7,7 +7,7 @@ image:
 date: 2026-10-11
 mins: 6
 excerpt: What Argo CD is, what developers use it for, and the GitOps features that keep a cluster matched to Git.
-post_tags: ["Argo CD", "Kubernetes", "DevOps"]
+post_tags: ["Argo CD"]
 ---
 
 Argo CD makes a Kubernetes cluster match what Git says, and puts it back when someone edits the cluster by hand. In the [backend architecture for high-traffic web apps](/blog/high-traffic-backend-architecture/), a release is a commit. Argo CD rolls the Deployment from that commit.

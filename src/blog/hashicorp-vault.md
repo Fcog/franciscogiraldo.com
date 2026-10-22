@@ -7,7 +7,7 @@ image:
 date: 2026-10-11
 mins: 6
 excerpt: What HashiCorp Vault is, what developers use it for, and the features that keep secrets out of Git and images.
-post_tags: ["Vault", "Kubernetes", "DevOps"]
+post_tags: ["Vault", "CI/CD"]
 ---
 
 HashiCorp Vault stores secrets and decides which workload may read them. In the [backend architecture for high-traffic web apps](/blog/high-traffic-backend-architecture/), Git holds the name of a secret. Vault holds the secret.

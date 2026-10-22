@@ -7,7 +7,7 @@ image:
 date: 2026-10-11
 mins: 10
 excerpt: How GitHub Actions, Docker, Kubernetes, NGINX Ingress, Helm, Vault, and Argo CD run a high-traffic backend, including the MLOps path.
-post_tags: ["Arquitecture", "Docker", "Kubernetes", "Helm", "Argo CD", "DevOps"]
+post_tags: ["Arquitecture"]
 ---
 
 A high-traffic web backend fails when the app, the servers, and the deploy process are tangled together. Split the work. GitHub Actions builds. Docker is the artifact. Kubernetes runs the copies. NGINX Ingress is the public door. Helm packages the config. Vault holds the secrets. Argo CD makes the cluster match Git.

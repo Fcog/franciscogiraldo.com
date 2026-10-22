@@ -3,11 +3,11 @@ layout: blog.njk
 post_id: 16
 tags: post
 title: Argo CD Cheat Sheet
-image: 
+image:
 date: 2026-10-11
 mins: 8
 excerpt: Handy reference for everyday Argo CD commands — login, apps, sync, rollback, repos, and clusters.
-post_tags: ['Kubernetes', 'Argo CD', 'DevOps']
+post_tags: ["Argo CD"]
 ---
 
 Quick reference for everyday Argo CD commands.
@@ -81,15 +81,15 @@ argocd app sync <app> --resource apps:Deployment:<name>
 argocd app sync -l app.kubernetes.io/instance=<parent-app>
 ```
 
-| Flag | Use |
-|------|-----|
-| `--prune` | Remove resources no longer in Git |
-| `--dry-run` | Preview the apply |
-| `--force` | Force apply, replace fields normally ignored |
-| `--replace` | `kubectl replace` instead of apply |
-| `--server-side` | Server-side apply |
-| `--local ./path` | Sync from a local directory, skip Git |
-| `--revision` | Sync a specific commit, tag, or branch |
+| Flag             | Use                                          |
+| ---------------- | -------------------------------------------- |
+| `--prune`        | Remove resources no longer in Git            |
+| `--dry-run`      | Preview the apply                            |
+| `--force`        | Force apply, replace fields normally ignored |
+| `--replace`      | `kubectl replace` instead of apply           |
+| `--server-side`  | Server-side apply                            |
+| `--local ./path` | Sync from a local directory, skip Git        |
+| `--revision`     | Sync a specific commit, tag, or branch       |
 
 ## Diff, History & Rollback
 
@@ -207,13 +207,13 @@ spec:
       - CreateNamespace=true
 ```
 
-| Sync option | Effect |
-|-------------|--------|
-| `CreateNamespace=true` | Create the destination namespace |
-| `PruneLast=true` | Prune only after the rest of the sync succeeds |
-| `ApplyOutOfSyncOnly=true` | Skip resources that are already synced |
-| `ServerSideApply=true` | Use server-side apply |
-| `Replace=true` | Replace resources instead of applying a patch |
+| Sync option               | Effect                                         |
+| ------------------------- | ---------------------------------------------- |
+| `CreateNamespace=true`    | Create the destination namespace               |
+| `PruneLast=true`          | Prune only after the rest of the sync succeeds |
+| `ApplyOutOfSyncOnly=true` | Skip resources that are already synced         |
+| `ServerSideApply=true`    | Use server-side apply                          |
+| `Replace=true`            | Replace resources instead of applying a patch  |
 
 ## kubectl Shortcuts
 

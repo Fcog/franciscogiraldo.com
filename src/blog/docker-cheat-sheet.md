@@ -3,11 +3,11 @@ layout: blog.njk
 post_id: 17
 tags: post
 title: Docker Cheat Sheet
-image: 
+image:
 date: 2026-10-11
 mins: 8
 excerpt: Handy reference for everyday Docker commands — images, containers, networks, volumes, and Compose.
-post_tags: ['Docker', 'DevOps']
+post_tags: ["Docker"]
 ---
 
 Quick reference for everyday Docker commands.
@@ -77,19 +77,19 @@ docker rm -f <container>             # Stop and remove
 docker rename <container> <new-name>
 ```
 
-| Flag | Use |
-|------|-----|
-| `-d` | Run in the background |
-| `--name` | Set the container name |
-| `-p 8080:80` | Publish host port to container port |
-| `-e KEY=value` | Set an environment variable |
-| `--env-file` | Load env vars from a file |
-| `-v src:dest` | Mount a volume or host path |
-| `-w` | Working directory inside the container |
-| `--rm` | Remove the container when it exits |
-| `-it` | Interactive terminal |
-| `--network` | Attach to a network |
-| `--restart unless-stopped` | Restart policy |
+| Flag                       | Use                                    |
+| -------------------------- | -------------------------------------- |
+| `-d`                       | Run in the background                  |
+| `--name`                   | Set the container name                 |
+| `-p 8080:80`               | Publish host port to container port    |
+| `-e KEY=value`             | Set an environment variable            |
+| `--env-file`               | Load env vars from a file              |
+| `-v src:dest`              | Mount a volume or host path            |
+| `-w`                       | Working directory inside the container |
+| `--rm`                     | Remove the container when it exits     |
+| `-it`                      | Interactive terminal                   |
+| `--network`                | Attach to a network                    |
+| `--restart unless-stopped` | Restart policy                         |
 
 ## Logs, Exec & Copy
 
@@ -206,17 +206,17 @@ EXPOSE 3000
 CMD ["node", "dist/server.js"]
 ```
 
-| Instruction | Use |
-|-------------|-----|
-| `FROM` | Base image. Repeat it for a multi-stage build |
-| `WORKDIR` | Set the working directory |
-| `COPY` / `ADD` | Copy files into the image |
-| `RUN` | Run a command at build time |
-| `ENV` | Set an environment variable |
-| `EXPOSE` | Document the port the process listens on |
-| `USER` | User to run later instructions as |
-| `CMD` | Default command when the container starts |
-| `ENTRYPOINT` | Executable that always runs |
+| Instruction    | Use                                           |
+| -------------- | --------------------------------------------- |
+| `FROM`         | Base image. Repeat it for a multi-stage build |
+| `WORKDIR`      | Set the working directory                     |
+| `COPY` / `ADD` | Copy files into the image                     |
+| `RUN`          | Run a command at build time                   |
+| `ENV`          | Set an environment variable                   |
+| `EXPOSE`       | Document the port the process listens on      |
+| `USER`         | User to run later instructions as             |
+| `CMD`          | Default command when the container starts     |
+| `ENTRYPOINT`   | Executable that always runs                   |
 
 ## Cleanup
 

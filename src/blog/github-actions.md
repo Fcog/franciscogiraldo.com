@@ -7,7 +7,7 @@ image:
 date: 2026-10-11
 mins: 5
 excerpt: What GitHub Actions is, what developers use it for, and the features that matter on a CI runner.
-post_tags: ["GitHub Actions", "DevOps"]
+post_tags: ["CI/CD"]
 ---
 
 GitHub Actions runs your build inside GitHub. A workflow file in the repository starts on a pull request or a merge, and a runner executes the steps. In the [backend architecture for high-traffic web apps](/blog/high-traffic-backend-architecture/), Actions is the CI runner: test, build the image, publish the tag.

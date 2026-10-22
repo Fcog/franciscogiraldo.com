@@ -3,102 +3,102 @@ layout: blog.njk
 post_id: 10
 tags: post
 title: HTTP Status Codes
-image: 
+image:
 date: 2022-05-01
 mins: 2
 excerpt: Handy cheatcode for HTTP Status Codes.
-post_tags: ['HTTP API']
+post_tags: ["rest API"]
 ---
 
 ## Complete list of HTTP Status Codes
 
 ### 1xx Informational
 
-| Code    | Meaning |
-|--------|---------------|
-| 100    | Continue      |
-| 101       |      Switching protocols         |
-| 102    | Processing      |
-| 103       |      	Early Hints        |
+| Code | Meaning             |
+| ---- | ------------------- |
+| 100  | Continue            |
+| 101  | Switching protocols |
+| 102  | Processing          |
+| 103  | Early Hints         |
 
 ### 2xx Succesful
 
-| Code    | Meaning |
-|--------|---------------|
-| 200    | OK      |
-| 201    | Created      |
-| 202    | Accepted      |
-| 203    | Non-Authoritative Information      |
-| 204    | No Content      |
-| 205    | Reset Content      |
-| 206    | Partial Content      |
-| 207    | Multi-Status      |
-| 208    | Already Reported      |
-| 226    | IM Used      |
+| Code | Meaning                       |
+| ---- | ----------------------------- |
+| 200  | OK                            |
+| 201  | Created                       |
+| 202  | Accepted                      |
+| 203  | Non-Authoritative Information |
+| 204  | No Content                    |
+| 205  | Reset Content                 |
+| 206  | Partial Content               |
+| 207  | Multi-Status                  |
+| 208  | Already Reported              |
+| 226  | IM Used                       |
 
 ### 3xx Redirection
 
-| Code    | Meaning |
-|--------|---------------|
-| 300    | Multiple Choices      |
-| 301    | Moved Permanently      |
-| 302    | Found (Previously "Moved Temporarily")       |
-| 303    | See Other       |
-| 304    | Not Modified       |
-| 305    | Use Proxy       |
-| 306    | Switch Proxy       |
-| 307    | Temporary Redirect       |
-| 308    | Permanent Redirect       |
+| Code | Meaning                                |
+| ---- | -------------------------------------- |
+| 300  | Multiple Choices                       |
+| 301  | Moved Permanently                      |
+| 302  | Found (Previously "Moved Temporarily") |
+| 303  | See Other                              |
+| 304  | Not Modified                           |
+| 305  | Use Proxy                              |
+| 306  | Switch Proxy                           |
+| 307  | Temporary Redirect                     |
+| 308  | Permanent Redirect                     |
 
 ### 4xx Client Error
 
-| Code    | Meaning |
-|--------|---------------|
-| 400    | Bad Request      |
-| 401    | Unauthorized      |
-| 402    | Payment Required      |
-| 403    | Forbidden      |
-| 404    | Not Found      |
-| 405    | Method Not Allowed      |
-| 406    | Not Acceptable      |
-| 407    | Proxy Authentication Required      |
-| 408    | Request Timeout      |
-| 409    | Conflict      |
-| 410    | Gone      |
-| 411    | Length Required      |
-| 412    | Precondition Failed      |
-| 413    | Payload Too Large      |
-| 414    | URI Too Long      |
-| 415    | Unsupported Media Type      |
-| 416    | Range Not Satisfiable      |
-| 417    | Expectation Failed      |
-| 418    | I'm a Teapot    |
-| 421    | Misdirected Request      |
-| 422    | Unprocessable Entity      |
-| 423    | Locked       | 	 
-| 424    | Failed Dependency       | 	
-| 425    | Too Early       | 	
-| 426    | Upgrade Required       | 	
-| 428    | Precondition Required       | 	
-| 429    | Too Many Requests       | 	
-| 431    | Request Header Fields Too Large       | 	
-| 451    | Unavailable For Legal Reasons       | 	
+| Code | Meaning                         |
+| ---- | ------------------------------- |
+| 400  | Bad Request                     |
+| 401  | Unauthorized                    |
+| 402  | Payment Required                |
+| 403  | Forbidden                       |
+| 404  | Not Found                       |
+| 405  | Method Not Allowed              |
+| 406  | Not Acceptable                  |
+| 407  | Proxy Authentication Required   |
+| 408  | Request Timeout                 |
+| 409  | Conflict                        |
+| 410  | Gone                            |
+| 411  | Length Required                 |
+| 412  | Precondition Failed             |
+| 413  | Payload Too Large               |
+| 414  | URI Too Long                    |
+| 415  | Unsupported Media Type          |
+| 416  | Range Not Satisfiable           |
+| 417  | Expectation Failed              |
+| 418  | I'm a Teapot                    |
+| 421  | Misdirected Request             |
+| 422  | Unprocessable Entity            |
+| 423  | Locked                          |
+| 424  | Failed Dependency               |
+| 425  | Too Early                       |
+| 426  | Upgrade Required                |
+| 428  | Precondition Required           |
+| 429  | Too Many Requests               |
+| 431  | Request Header Fields Too Large |
+| 451  | Unavailable For Legal Reasons   |
 
 ### 5xx Server Error
 
-| Code    | Meaning |
-|--------|---------------|
-| 500    | Internal Server Error      |
-| 501    | Not Implemented      |
-| 502    | Bad Gateway      |
-| 503    | Service Unavailable      |
-| 504    | Gateway Timeout      |
-| 505    | HTTP Version Not Supported      |
-| 506    | Variant Also Negotiates      |
-| 507    | Insufficient Storage      |
-| 508    | Loop Detected      |
-| 510   | Not Extended      |
-| 511   | Network Authentication Required      |
+| Code | Meaning                         |
+| ---- | ------------------------------- |
+| 500  | Internal Server Error           |
+| 501  | Not Implemented                 |
+| 502  | Bad Gateway                     |
+| 503  | Service Unavailable             |
+| 504  | Gateway Timeout                 |
+| 505  | HTTP Version Not Supported      |
+| 506  | Variant Also Negotiates         |
+| 507  | Insufficient Storage            |
+| 508  | Loop Detected                   |
+| 510  | Not Extended                    |
+| 511  | Network Authentication Required |
 
 ## 1xx Informational status code
 
@@ -119,7 +119,7 @@ A 2xx Succesful status code means that the request was successful and the browse
 The 200 OK status code means that the request was successful, but the meaning of success depends on the request method used:
 
 - GET: The requested resource has been fetched and transmitted to the message body.
-- HEAD: The header fields from the requested resource are sent in without the message body. 
+- HEAD: The header fields from the requested resource are sent in without the message body.
 - POST or PUT: A description of the result of the action is transmitted to the message body.
 - TRACE: The request messages, as received by the server, will be included in the message body
 
@@ -131,7 +131,7 @@ When looking at things SEO-wise the 200 OK response code is the perfect status c
 
 **203** Non-Authoritative Information status code means that the request was successful. However, the meta-information that has been received is different from the one on the origin server and has instead been collected from a 3rd party or local copy. When not used for backups or mirrors of another resource a 200 OK response is preferable.
 
-**204** No Content status code means that while the server has successfully fulfilled the request, there is no available content for this request. But the user agent might want to update its currently cached headers for this resource, for the new one. 
+**204** No Content status code means that while the server has successfully fulfilled the request, there is no available content for this request. But the user agent might want to update its currently cached headers for this resource, for the new one.
 
 **205** Reset Content status code means that the user should reset the document that sent this request.
 
@@ -197,9 +197,9 @@ If you need to fix 404 errors, jump to this section.
 
 **409** Conflict status code means that the request could not be fulfilled due to a conflict with the current state of the target resource and is used in situations where the user might be able to resubmit the request after resolving the conflict.
 
-**410** Gone status code means that the target resource has been deleted and the condition seems to be permanent. 
+**410** Gone status code means that the target resource has been deleted and the condition seems to be permanent.
 
-When looking at things SEO-wise the 410 Gone status code is a more permanent version a 404. The page will no longer be available from the server and has no forwarding address available. If you want to completely remove a page from Googles search index, then using 410 on a page is the proper way of doing it (instead of simply 404). 
+When looking at things SEO-wise the 410 Gone status code is a more permanent version a 404. The page will no longer be available from the server and has no forwarding address available. If you want to completely remove a page from Googles search index, then using 410 on a page is the proper way of doing it (instead of simply 404).
 
 **411** Length Required status code means that the server has rejected the request because it requires the Content-Length header field to be defined.
 
@@ -267,4 +267,4 @@ If you want to fix 503 errors, jump to this section.
 
 **510** Not Extended response code means that further extensions are required for the server to be able to fulfil the request.
 
-**511** Network Authentication Required response code indicates that the client needs to authenticate to gain network access. 
+**511** Network Authentication Required response code indicates that the client needs to authenticate to gain network access.

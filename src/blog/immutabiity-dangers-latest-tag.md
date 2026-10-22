@@ -7,7 +7,7 @@ image:
 date: 2026-10-16
 mins: 10
 excerpt: Tag images with a Git commit SHA so production never pulls a moving :latest tag.
-post_tags: ["Arquitecture", "Docker", "Kubernetes", "Helm", "DevOps"]
+post_tags: ["Docker", "CI/CD"]
 ---
 
 # Why the Mutable `:latest` Docker Tag is Dangerous in Production (And What to Use Instead)

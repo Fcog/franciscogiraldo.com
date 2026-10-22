@@ -7,7 +7,7 @@ image:
 date: 2026-10-11
 mins: 5
 excerpt: What Docker is, what developers use it for, and the image, container, and Compose features you use every week.
-post_tags: ["Docker", "DevOps"]
+post_tags: ["Docker"]
 ---
 
 Docker packages a process with the runtime and libraries it needs, then runs that package the same way on a laptop and in a cluster. In the [backend architecture for high-traffic web apps](/blog/high-traffic-backend-architecture/), the Docker image is the artifact every replica runs.

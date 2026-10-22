@@ -7,7 +7,7 @@ image:
 date: 2026-10-11
 mins: 10
 excerpt: Use one Helm chart for dev and prod, and keep the differences in values files.
-post_tags: ["Arquitecture", "Docker", "Kubernetes", "Helm", "DevOps"]
+post_tags: ["Helm"]
 ---
 
 As a backend engineer working more with Kubernetes, you soon find that each new environment—whether it is staging, QA, canary, or a dynamic PR preview—tempts you to make another copy of the same YAML.
